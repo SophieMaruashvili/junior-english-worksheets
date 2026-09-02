@@ -6,7 +6,7 @@ import { WorksheetCatalog } from './components/WorksheetCatalog';
 import { WorksheetViewerModal } from './components/WorksheetViewerModal';
 import { ShareModal } from './components/ShareModal';
 import { SyllabusModal } from './components/SyllabusModal';
-import { allWorksheetsComplete } from './data/worksheetsCurriculum';
+import { allWorksheetsUltimate } from './data/worksheetsCurriculum';
 import { GradeLevel, SubjectCategory, Language, WorksheetData } from './types';
 
 export const App: React.FC = () => {
@@ -21,7 +21,7 @@ export const App: React.FC = () => {
     setLang((prev) => (prev === 'ka' ? 'en' : 'ka'));
   };
 
-  const filteredWorksheets = allWorksheetsComplete.filter((w) => {
+  const filteredWorksheets = allWorksheetsUltimate.filter((w) => {
     if (selectedCategory === 'alphabet') {
       return w.category === 'alphabet';
     }

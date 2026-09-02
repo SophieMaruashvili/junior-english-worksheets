@@ -714,3 +714,12 @@ export const allWorksheetsComplete: WorksheetData[] = [
   ...oxfordPhonicsWorksheets,
   ...allWorksheets
 ];
+
+import { vocabularyWorksheets } from './vocabularyWorksheets';
+
+export const allWorksheetsUltimate: WorksheetData[] = [
+  ...alphabetWorksheets,
+  ...oxfordPhonicsWorksheets,
+  ...vocabularyWorksheets,
+  ...allWorksheets
+];
