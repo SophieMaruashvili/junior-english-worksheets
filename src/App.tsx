@@ -6,12 +6,12 @@ import { WorksheetCatalog } from './components/WorksheetCatalog';
 import { WorksheetViewerModal } from './components/WorksheetViewerModal';
 import { ShareModal } from './components/ShareModal';
 import { SyllabusModal } from './components/SyllabusModal';
-import { allWorksheetsWithAlphabet } from './data/worksheetsCurriculum';
+import { allWorksheetsComplete } from './data/worksheetsCurriculum';
 import { GradeLevel, SubjectCategory, Language, WorksheetData } from './types';
 
 export const App: React.FC = () => {
   const [lang, setLang] = useState<Language>('ka');
-  const [selectedGrade, setSelectedGrade] = useState<GradeLevel>(1);
+  const [selectedGrade, setSelectedGrade] = useState<GradeLevel>(2);
   const [selectedCategory, setSelectedCategory] = useState<SubjectCategory>('all');
   const [selectedWorksheet, setSelectedWorksheet] = useState<WorksheetData | null>(null);
   const [isShareModalOpen, setIsShareModalOpen] = useState(false);
@@ -21,8 +21,7 @@ export const App: React.FC = () => {
     setLang((prev) => (prev === 'ka' ? 'en' : 'ka'));
   };
 
-  const filteredWorksheets = allWorksheetsWithAlphabet.filter((w) => {
-    // If category is alphabet, show all alphabet worksheets across grades (default grade 1)
+  const filteredWorksheets = allWorksheetsComplete.filter((w) => {
     if (selectedCategory === 'alphabet') {
       return w.category === 'alphabet';
     }
@@ -45,7 +44,7 @@ export const App: React.FC = () => {
       <HeroBanner
         lang={lang}
         onExploreFree={() => {
-          setSelectedGrade(1);
+          setSelectedGrade(2);
           setSelectedCategory('all');
           window.scrollTo({ top: 380, behavior: 'smooth' });
         }}

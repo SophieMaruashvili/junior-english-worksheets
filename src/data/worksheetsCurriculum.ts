@@ -706,3 +706,11 @@ export const allWorksheetsWithAlphabet: WorksheetData[] = [
   ...alphabetWorksheets,
   ...allWorksheets
 ];
+
+import { oxfordPhonicsWorksheets } from './oxfordPhonicsWorksheets';
+
+export const allWorksheetsComplete: WorksheetData[] = [
+  ...alphabetWorksheets,
+  ...oxfordPhonicsWorksheets,
+  ...allWorksheets
+];
