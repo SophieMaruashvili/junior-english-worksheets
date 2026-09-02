@@ -482,7 +482,7 @@ export const pricingPlans: PricingPlan[] = [
     id: 'single_grade',
     titleEn: 'Single Grade Pack',
     titleKa: 'ერთი კლასის პაკეტი',
-    priceGel: 5.90,
+    priceGel: 1.00,
     originalPriceGel: 15.00,
     featuresEn: [
       'Full access to 1 chosen Grade (1, 2, 3, or 4)',
@@ -501,17 +501,17 @@ export const pricingPlans: PricingPlan[] = [
     id: 'mega_bundle',
     titleEn: 'Mega Bundle (Grades 1 to 4)',
     titleKa: 'სრული მეგა-კრებული (1-4 კლასი)',
-    priceGel: 9.90,
+    priceGel: 1.00,
     originalPriceGel: 45.00,
     isPopular: true,
-    badge: 'ყველაზე პოპულარული 🔥',
+    badge: 'ტესტ-აქცია 🔥 1.00 ₾',
     featuresEn: [
       'Instant access to ALL Grades 1, 2, 3, and 4!',
       '150+ Pure English School Worksheets & Tests',
       'ESL-Tailored: Phonics, Have got/Has got, Can/Can\'t, Prepositions, Tenses',
       'Ink-Saver B&W Mode + Full Color Studio Mode',
       'Teacher-Approved Answer Keys for every worksheet',
-      'One-Time Payment (9.90 GEL) • Lifetime Future Updates'
+      'One-Time Payment (1.00 GEL) • Lifetime Future Updates'
     ],
     featuresKa: [
       'მყისიერი წვდომა ყველა 1, 2, 3 და მე-4 კლასზე!',
@@ -520,14 +520,14 @@ export const pricingPlans: PricingPlan[] = [
       'Have/Has got, Can/Can\'t, წინდებულები, დროები, ლექსიკა',
       'ეკონომიური B&W (Ink Saver) + ფერადი რეჟიმი',
       'პედაგოგების მიერ შედგენილი პასუხების გასაღები',
-      'ერთჯერადი გადახდა (9.90 ₾) • მუდმივი წვდომა'
+      'სატესტო ფასი (1.00 ₾) • მუდმივი წვდომა'
     ]
   },
   {
     id: 'teacher_unlimited',
     titleEn: 'Teacher & Tutor Classroom License',
     titleKa: 'პედაგოგისა და რეპეტიტორის ლიცენზია',
-    priceGel: 19.90,
+    priceGel: 1.00,
     originalPriceGel: 79.00,
     badge: 'სკოლებისთვის 🏫',
     featuresEn: [
