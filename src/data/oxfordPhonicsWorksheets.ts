@@ -3,36 +3,36 @@ import { WorksheetData } from '../types';
 export const oxfordPhonicsWorksheets: WorksheetData[] = [
   // 1. CH & SH Digraphs
   {
-    id: 'g2_oxford_ch_sh',
+    id: 'g2_letter_combo_ch_sh',
     grade: 2,
     category: 'phonics',
     isFree: true,
-    titleEn: 'Oxford Phonics: Digraphs CH & SH',
+    titleEn: 'Letter Combinations: CH & SH',
     titleKa: 'ასოთშეთანხმებები CH და SH',
     topicEn: 'CH (Chair, Chicken, Beach) vs. SH (Shark, Shell, Shoes, Ship)',
     topicKa: 'CH და SH ბგერები და სიტყვები',
     difficulty: 'Easy',
-    instructionsEn: 'Look at the pictures, complete the words with "ch" or "sh", and copy the words.',
+    instructionsEn: 'Complete the words with "ch" or "sh" and copy the words on the lines.',
     instructionsKa: 'შეავსე სიტყვები "ch" ან "sh"-ით და გადაწერე ხაზზე.',
     icon: 'shark',
     previewArt: 'shark',
     sections: [
       {
-        headingEn: 'Section A: The "CH" Digraph (/tʃ/ sound)',
+        headingEn: 'Section A: The "CH" Sound (/tʃ/)',
         headingKa: 'ჯგუფი A: „CH“ სიტყვები',
         items: [
           { prompt: '1. ___ A I R ➔ chair (sit on it)', trace: 'chair', line: 'c h a i r' },
           { prompt: '2. ___ I C K E N ➔ chicken (farm bird)', trace: 'chicken', line: 'c h i c k e n' },
           { prompt: '3. ___ E E S E ➔ cheese (yellow dairy)', trace: 'cheese', line: 'c h e e s e' },
-          { prompt: '4. B E A ___ ➔ beach (sandy ocean coast)', trace: 'beach', line: 'b e a c h' }
+          { prompt: '4. B E A ___ ➔ beach (sandy coast)', trace: 'beach', line: 'b e a c h' }
         ]
       },
       {
-        headingEn: 'Section B: The "SH" Digraph (/ʃ/ sound)',
+        headingEn: 'Section B: The "SH" Sound (/ʃ/)',
         headingKa: 'ჯგუფი B: „SH“ სიტყვები',
         items: [
           { prompt: '5. ___ A R K ➔ shark (ocean hunter)', trace: 'shark', line: 's h a r k' },
-          { prompt: '6. ___ E L L ➔ shell (seashell on sand)', trace: 'shell', line: 's h e l l' },
+          { prompt: '6. ___ E L L ➔ shell (seashell on beach)', trace: 'shell', line: 's h e l l' },
           { prompt: '7. ___ O E S ➔ shoes (wear on feet)', trace: 'shoes', line: 's h o e s' },
           { prompt: '8. ___ I P ➔ ship (sails on water)', trace: 'ship', line: 's h i p' }
         ]
@@ -43,11 +43,11 @@ export const oxfordPhonicsWorksheets: WorksheetData[] = [
 
   // 2. TH & WH Digraphs
   {
-    id: 'g2_oxford_th_wh',
+    id: 'g2_letter_combo_th_wh',
     grade: 2,
     category: 'phonics',
     isFree: true,
-    titleEn: 'Oxford Phonics: Digraphs TH & WH',
+    titleEn: 'Letter Combinations: TH & WH',
     titleKa: 'ასოთშეთანხმებები TH და WH',
     topicEn: 'TH (Three, Think, Thumb, Teeth) vs. WH (Whale, White, Wheel, Whistle)',
     topicKa: 'TH და WH ბგერები და სიტყვები',
@@ -58,23 +58,23 @@ export const oxfordPhonicsWorksheets: WorksheetData[] = [
     previewArt: 'shark',
     sections: [
       {
-        headingEn: 'Section A: The "TH" Digraph',
+        headingEn: 'Section A: The "TH" Sound',
         headingKa: 'ჯგუფი A: „TH“ სიტყვები',
         items: [
           { prompt: '1. ___ R E E ➔ three (number 3)', trace: 'three', line: 't h r e e' },
-          { prompt: '2. ___ U M B ➔ thumb (hand finger)', trace: 'thumb', line: 't h u m b' },
-          { prompt: '3. ___ I N K ➔ think (use your brain)', trace: 'think', line: 't h i n k' },
-          { prompt: '4. T E E ___ ➔ teeth (brush your teeth)', trace: 'teeth', line: 't e e t h' }
+          { prompt: '2. ___ U M B ➔ thumb (finger)', trace: 'thumb', line: 't h u m b' },
+          { prompt: '3. ___ I N K ➔ think (use brain)', trace: 'think', line: 't h i n k' },
+          { prompt: '4. T E E ___ ➔ teeth (brush teeth)', trace: 'teeth', line: 't e e t h' }
         ]
       },
       {
-        headingEn: 'Section B: The "WH" Digraph',
+        headingEn: 'Section B: The "WH" Sound',
         headingKa: 'ჯგუფი B: „WH“ სიტყვები',
         items: [
           { prompt: '5. ___ A L E ➔ whale (giant blue mammal)', trace: 'whale', line: 'w h a l e' },
           { prompt: '6. ___ I T E ➔ white (white snow)', trace: 'white', line: 'w h i t e' },
           { prompt: '7. ___ E E L ➔ wheel (bicycle wheel)', trace: 'wheel', line: 'w h e e l' },
-          { prompt: '8. ___ I S T L E ➔ whistle (makes sound)', trace: 'whistle', line: 'w h i s t l e' }
+          { prompt: '8. ___ I S T L E ➔ whistle (sound)', trace: 'whistle', line: 'w h i s t l e' }
         ]
       }
     ],
@@ -83,14 +83,14 @@ export const oxfordPhonicsWorksheets: WorksheetData[] = [
 
   // 3. PH & CK Digraphs
   {
-    id: 'g2_oxford_ph_ck',
+    id: 'g2_letter_combo_ph_ck',
     grade: 2,
     category: 'phonics',
     isFree: true,
-    titleEn: 'Oxford Phonics: Digraphs PH & CK',
+    titleEn: 'Letter Combinations: PH & CK',
     titleKa: 'ასოთშეთანხმებები PH და CK',
     topicEn: 'PH /f/ (Phone, Dolphin, Photo) vs. CK /k/ (Duck, Clock, Sock, Rock)',
-    topicKa: 'PH (ფ) და CK (კ) ბგერები',
+    topicKa: 'PH და CK ბგერები',
     difficulty: 'Medium',
     instructionsEn: 'Fill in the blanks with "ph" (/f/) or "ck" (/k/).',
     instructionsKa: 'შეავსე "ph" ან "ck"-ით.',
@@ -98,23 +98,23 @@ export const oxfordPhonicsWorksheets: WorksheetData[] = [
     previewArt: 'shark',
     sections: [
       {
-        headingEn: 'Section A: The "PH" Digraph (/f/ sound)',
+        headingEn: 'Section A: The "PH" Sound (/f/)',
         headingKa: 'ჯგუფი A',
         items: [
           { prompt: '1. ___ O N E ➔ phone (call a friend)', trace: 'phone', line: 'p h o n e' },
-          { prompt: '2. D O L ___ I N ➔ dolphin (friendly swimmer)', trace: 'dolphin', line: 'd o l p h i n' },
-          { prompt: '3. ___ O T O ➔ photo (camera picture)', trace: 'photo', line: 'p h o t o' },
+          { prompt: '2. D O L ___ I N ➔ dolphin (swimmer)', trace: 'dolphin', line: 'd o l p h i n' },
+          { prompt: '3. ___ O T O ➔ photo (picture)', trace: 'photo', line: 'p h o t o' },
           { prompt: '4. E L E ___ A N T ➔ elephant (big ears)', trace: 'elephant', line: 'e l e p h a n t' }
         ]
       },
       {
-        headingEn: 'Section B: The "CK" Digraph (/k/ sound)',
+        headingEn: 'Section B: The "CK" Sound (/k/)',
         headingKa: 'ჯგუფი B',
         items: [
-          { prompt: '5. D U ___ ➔ duck (swims and quacks)', trace: 'duck', line: 'd u c k' },
+          { prompt: '5. D U ___ ➔ duck (quacks in water)', trace: 'duck', line: 'd u c k' },
           { prompt: '6. C L O ___ ➔ clock (tells time)', trace: 'clock', line: 'c l o c k' },
           { prompt: '7. S O ___ ➔ sock (wear in shoes)', trace: 'sock', line: 's o c k' },
-          { prompt: '8. R O ___ ➔ rock (hard gray stone)', trace: 'rock', line: 'r o c k' }
+          { prompt: '8. R O ___ ➔ rock (hard stone)', trace: 'rock', line: 'r o c k' }
         ]
       }
     ],
@@ -123,17 +123,17 @@ export const oxfordPhonicsWorksheets: WorksheetData[] = [
 
   // 4. L-Blends (BL, CL, FL, GL, PL, SL)
   {
-    id: 'g2_oxford_l_blends',
+    id: 'g2_letter_combo_l_blends',
     grade: 2,
     category: 'phonics',
     isFree: true,
-    titleEn: 'Oxford Phonics: L-Blends (BL, CL, FL, GL, PL, SL)',
-    titleKa: 'L-თანხმოვანთა შერწყმა: BL, CL, FL, GL, PL, SL',
-    topicEn: 'Blue, Black, Clock, Clown, Flag, Glass, Plate, Slide',
+    titleEn: 'Consonant Blends: BL, CL, FL, GL, PL, SL',
+    titleKa: 'თანხმოვანთა შეთანხმება: BL, CL, FL, GL, PL, SL',
+    topicEn: 'Blue, Clock, Flag, Glass, Plate, Slide',
     topicKa: 'BL, CL, FL, GL, PL, SL სიტყვები',
     difficulty: 'Medium',
     instructionsEn: 'Complete the word with the correct L-blend from the Word Bank.',
-    instructionsKa: 'შეავსე სწორი L-შეთანხმებით.',
+    instructionsKa: 'შეავსე სწორი შეთანხმებით.',
     icon: 'shark',
     previewArt: 'shark',
     sections: [
@@ -141,11 +141,11 @@ export const oxfordPhonicsWorksheets: WorksheetData[] = [
         headingEn: 'Word Bank: [ BL , CL , FL , GL , PL , SL ]',
         headingKa: 'სიტყვათა ბანკი',
         items: [
-          { prompt: '1. ___ U E ➔ blue (color of the sky)', line: 'blue', blend: 'BL' },
-          { prompt: '2. ___ O C K ➔ clock (on the wall)', line: 'clock', blend: 'CL' },
+          { prompt: '1. ___ U E ➔ blue (color of sky)', line: 'blue', blend: 'BL' },
+          { prompt: '2. ___ O C K ➔ clock (on wall)', line: 'clock', blend: 'CL' },
           { prompt: '3. ___ A G ➔ flag (flying in wind)', line: 'flag', blend: 'FL' },
           { prompt: '4. ___ A S S ➔ glass (drink water)', line: 'glass', blend: 'GL' },
-          { prompt: '5. ___ A T E ➔ plate (eat lunch on it)', line: 'plate', blend: 'PL' },
+          { prompt: '5. ___ A T E ➔ plate (eat lunch)', line: 'plate', blend: 'PL' },
           { prompt: '6. ___ I D E ➔ slide (play in park)', line: 'slide', blend: 'SL' }
         ]
       }
@@ -155,17 +155,17 @@ export const oxfordPhonicsWorksheets: WorksheetData[] = [
 
   // 5. R-Blends (BR, CR, DR, FR, GR, TR)
   {
-    id: 'g2_oxford_r_blends',
+    id: 'g2_letter_combo_r_blends',
     grade: 2,
     category: 'phonics',
     isFree: true,
-    titleEn: 'Oxford Phonics: R-Blends (BR, CR, DR, FR, GR, TR)',
-    titleKa: 'R-თანხმოვანთა შერწყმა: BR, CR, DR, FR, GR, TR',
-    topicEn: 'Bread, Brown, Crab, Dragon, Frog, Grapes, Tree, Train',
+    titleEn: 'Consonant Blends: BR, CR, DR, FR, GR, TR',
+    titleKa: 'თანხმოვანთა შეთანხმება: BR, CR, DR, FR, GR, TR',
+    topicEn: 'Brown, Crab, Dragon, Frog, Grapes, Tree',
     topicKa: 'BR, CR, DR, FR, GR, TR სიტყვები',
     difficulty: 'Medium',
     instructionsEn: 'Choose the matching R-blend: [ BR , CR , DR , FR , GR , TR ].',
-    instructionsKa: 'შეარჩიე სწორი R-შეთანხმება.',
+    instructionsKa: 'შეარჩიე სწორი შეთანხმება.',
     icon: 'shark',
     previewArt: 'shark',
     sections: [
@@ -175,9 +175,9 @@ export const oxfordPhonicsWorksheets: WorksheetData[] = [
         items: [
           { prompt: '1. ___ O W N ➔ brown (color of bear)', line: 'brown', blend: 'BR' },
           { prompt: '2. ___ A B ➔ crab (walks on beach)', line: 'crab', blend: 'CR' },
-          { prompt: '3. ___ A G O N ➔ dragon (flies with fire)', line: 'dragon', blend: 'DR' },
+          { prompt: '3. ___ A G O N ➔ dragon (flying monster)', line: 'dragon', blend: 'DR' },
           { prompt: '4. ___ O G ➔ frog (jumps in pond)', line: 'frog', blend: 'FR' },
-          { prompt: '5. ___ A P E S ➔ grapes (sweet purple fruit)', line: 'grapes', blend: 'GR' },
+          { prompt: '5. ___ A P E S ➔ grapes (sweet fruit)', line: 'grapes', blend: 'GR' },
           { prompt: '6. ___ E E ➔ tree (tall green tree)', line: 'tree', blend: 'TR' }
         ]
       }
@@ -187,13 +187,13 @@ export const oxfordPhonicsWorksheets: WorksheetData[] = [
 
   // 6. S-Blends (SM, SN, SP, ST, SW)
   {
-    id: 'g2_oxford_s_blends',
+    id: 'g2_letter_combo_s_blends',
     grade: 2,
     category: 'phonics',
     isFree: true,
-    titleEn: 'Oxford Phonics: S-Blends (SM, SN, SP, ST, SW)',
-    titleKa: 'S-თანხმოვანთა შერწყმა: SM, SN, SP, ST, SW',
-    topicEn: 'Smile, Snake, Spoon, Spider, Star, Stop, Swim, Sweet',
+    titleEn: 'Consonant Blends: SM, SN, SP, ST, SW',
+    titleKa: 'თანხმოვანთა შეთანხმება: SM, SN, SP, ST, SW',
+    topicEn: 'Smile, Snake, Spoon, Star, Swim, Stop',
     topicKa: 'SM, SN, SP, ST, SW სიტყვები',
     difficulty: 'Medium',
     instructionsEn: 'Complete the words with [ SM , SN , SP , ST , SW ].',
@@ -206,11 +206,11 @@ export const oxfordPhonicsWorksheets: WorksheetData[] = [
         headingKa: 'სიტყვათა ბანკი',
         items: [
           { prompt: '1. ___ I L E ➔ smile (happy face)', line: 'smile', blend: 'SM' },
-          { prompt: '2. ___ A K E ➔ snake (crawls on grass)', line: 'snake', blend: 'SN' },
+          { prompt: '2. ___ A K E ➔ snake (crawls in grass)', line: 'snake', blend: 'SN' },
           { prompt: '3. ___ O O N ➔ spoon (eat soup)', line: 'spoon', blend: 'SP' },
           { prompt: '4. ___ A R ➔ star (shines at night)', line: 'star', blend: 'ST' },
           { prompt: '5. ___ I M ➔ swim (swim in water)', line: 'swim', blend: 'SW' },
-          { prompt: '6. ___ O P ➔ stop (red traffic light)', line: 'stop', blend: 'ST' }
+          { prompt: '6. ___ O P ➔ stop (red signal)', line: 'stop', blend: 'ST' }
         ]
       }
     ],
@@ -219,38 +219,38 @@ export const oxfordPhonicsWorksheets: WorksheetData[] = [
 
   // 7. Long Vowel Teams: EE & EA
   {
-    id: 'g2_oxford_vowel_ee_ea',
+    id: 'g2_letter_combo_vowel_ee_ea',
     grade: 2,
     category: 'phonics',
     isFree: true,
-    titleEn: 'Oxford Phonics: Long Vowel Teams EE & EA',
-    titleKa: 'გრძელი ხმოვანთა შეთანხმება: EE და EA',
-    topicEn: 'EE (Tree, Bee, Feet, Green) vs. EA (Leaf, Tea, Read, Meat)',
-    topicKa: 'EE და EA ხმოვნები (/i:/ ბგერა)',
+    titleEn: 'Vowel Teams: EE & EA',
+    titleKa: 'ხმოვანთა შეთანხმება: EE და EA',
+    topicEn: 'EE (Tree, Bee, Feet, Green) vs. EA (Leaf, Tea, Read, Sea)',
+    topicKa: 'EE და EA (/i:/ ბგერა)',
     difficulty: 'Medium',
-    instructionsEn: 'Complete the words with "ee" or "ea" and trace on lines.',
+    instructionsEn: 'Complete the words with "ee" or "ea" and trace.',
     instructionsKa: 'შეავსე "ee" ან "ea"-თი და გამოწერე.',
     icon: 'treehouse',
     previewArt: 'treehouse',
     sections: [
       {
         headingEn: 'Section A: The "EE" Team',
-        headingKa: 'ჯგუფი A: „EE“ სიტყვები',
+        headingKa: 'ჯგუფი A',
         items: [
           { prompt: '1. T R ___ ___ ➔ tree (tall green tree)', trace: 'tree', line: 't r e e' },
-          { prompt: '2. B ___ ___ ➔ bee (makes sweet honey)', trace: 'bee', line: 'b e e' },
-          { prompt: '3. F ___ ___ T ➔ feet (walk with two feet)', trace: 'feet', line: 'f e e t' },
+          { prompt: '2. B ___ ___ ➔ bee (makes honey)', trace: 'bee', line: 'b e e' },
+          { prompt: '3. F ___ ___ T ➔ feet (two feet)', trace: 'feet', line: 'f e e t' },
           { prompt: '4. G R ___ ___ N ➔ green (color of grass)', trace: 'green', line: 'g r e e n' }
         ]
       },
       {
         headingEn: 'Section B: The "EA" Team',
-        headingKa: 'ჯგუფი B: „EA“ სიტყვები',
+        headingKa: 'ჯგუფი B',
         items: [
-          { prompt: '5. L ___ ___ F ➔ leaf (green autumn leaf)', trace: 'leaf', line: 'l e a f' },
-          { prompt: '6. T ___ ___ ➔ tea (warm cup of tea)', trace: 'tea', line: 't e a' },
-          { prompt: '7. R ___ ___ D ➔ read (read an English book)', trace: 'read', line: 'r e a d' },
-          { prompt: '8. S ___ ___ ➔ sea (blue deep ocean)', trace: 'sea', line: 's e a' }
+          { prompt: '5. L ___ ___ F ➔ leaf (green leaf)', trace: 'leaf', line: 'l e a f' },
+          { prompt: '6. T ___ ___ ➔ tea (warm tea)', trace: 'tea', line: 't e a' },
+          { prompt: '7. R ___ ___ D ➔ read (read a book)', trace: 'read', line: 'r e a d' },
+          { prompt: '8. S ___ ___ ➔ sea (blue sea)', trace: 'sea', line: 's e a' }
         ]
       }
     ],
@@ -259,14 +259,14 @@ export const oxfordPhonicsWorksheets: WorksheetData[] = [
 
   // 8. Long Vowel Teams: AI & AY
   {
-    id: 'g2_oxford_vowel_ai_ay',
+    id: 'g2_letter_combo_vowel_ai_ay',
     grade: 2,
     category: 'phonics',
     isFree: true,
-    titleEn: 'Oxford Phonics: Long Vowel Teams AI & AY',
-    titleKa: 'გრძელი ხმოვანთა შეთანხმება: AI და AY',
-    topicEn: 'AI in middle (Rain, Train, Snail, Tail) vs. AY at end (Play, Day, May, Say)',
-    topicKa: 'AI (შუაში) და AY (ბოლოში) /eɪ/ ბგერა',
+    titleEn: 'Vowel Teams: AI & AY',
+    titleKa: 'ხმოვანთა შეთანხმება: AI და AY',
+    topicEn: 'AI in middle (Rain, Train, Snail) vs. AY at end (Play, Day, Tray)',
+    topicKa: 'AI და AY /eɪ/ ბგერა',
     difficulty: 'Medium',
     instructionsEn: 'Complete words with "ai" (middle) or "ay" (word ending).',
     instructionsKa: 'შეავსე "ai" ან "ay"-თი.',
@@ -274,15 +274,15 @@ export const oxfordPhonicsWorksheets: WorksheetData[] = [
     previewArt: 'treehouse',
     sections: [
       {
-        headingEn: 'Complete with [ AI (middle) / AY (end) ]',
+        headingEn: 'Complete with [ AI / AY ]',
         headingKa: 'სავარჯიშო',
         items: [
-          { prompt: '1. R ___ ___ N ➔ rain (water falls from clouds)', line: 'rain' },
-          { prompt: '2. P L ___ ___ ➔ play (play in the park)', line: 'play' },
-          { prompt: '3. T R ___ ___ N ➔ train (fast electric train)', line: 'train' },
-          { prompt: '4. D ___ ___ ➔ day (sunny warm day)', line: 'day' },
-          { prompt: '5. S N ___ ___ L ➔ snail (slow garden animal)', line: 'snail' },
-          { prompt: '6. T R ___ ___ ➔ tray (carry food on tray)', line: 'tray' }
+          { prompt: '1. R ___ ___ N ➔ rain (water from clouds)', line: 'rain' },
+          { prompt: '2. P L ___ ___ ➔ play (play in park)', line: 'play' },
+          { prompt: '3. T R ___ ___ N ➔ train (fast train)', line: 'train' },
+          { prompt: '4. D ___ ___ ➔ day (sunny day)', line: 'day' },
+          { prompt: '5. S N ___ ___ L ➔ snail (slow snail)', line: 'snail' },
+          { prompt: '6. T R ___ ___ ➔ tray (food tray)', line: 'tray' }
         ]
       }
     ],
@@ -291,13 +291,13 @@ export const oxfordPhonicsWorksheets: WorksheetData[] = [
 
   // 9. Long Vowel Teams: OA & OW
   {
-    id: 'g2_oxford_vowel_oa_ow',
+    id: 'g2_letter_combo_vowel_oa_ow',
     grade: 2,
     category: 'phonics',
     isFree: true,
-    titleEn: 'Oxford Phonics: Long Vowel Teams OA & OW',
-    titleKa: 'გრძელი ხმოვანთა შეთანხმება: OA და OW',
-    topicEn: 'OA (Boat, Coat, Soap, Road) vs. OW (Snow, Window, Yellow, Bowl)',
+    titleEn: 'Vowel Teams: OA & OW',
+    titleKa: 'ხმოვანთა შეთანხმება: OA და OW',
+    topicEn: 'OA (Boat, Coat, Soap) vs. OW (Snow, Window, Yellow, Bowl)',
     topicKa: 'OA და OW /oʊ/ ბგერა',
     difficulty: 'Medium',
     instructionsEn: 'Fill in the blanks with "oa" or "ow" to complete the words.',
@@ -310,11 +310,11 @@ export const oxfordPhonicsWorksheets: WorksheetData[] = [
         headingKa: 'სავარჯიშო',
         items: [
           { prompt: '1. B ___ ___ T ➔ boat (sails on lake)', line: 'boat' },
-          { prompt: '2. C ___ ___ T ➔ coat (warm winter coat)', line: 'coat' },
-          { prompt: '3. S N ___ ___ ➔ snow (white cold snow)', line: 'snow' },
-          { prompt: '4. S ___ ___ P ➔ soap (wash hands with soap)', line: 'soap' },
-          { prompt: '5. Y E L L ___ ___ ➔ yellow (yellow sunshine)', line: 'yellow' },
-          { prompt: '6. B ___ ___ L ➔ bowl (bowl of cereal)', line: 'bowl' }
+          { prompt: '2. C ___ ___ T ➔ coat (warm coat)', line: 'coat' },
+          { prompt: '3. S N ___ ___ ➔ snow (white snow)', line: 'snow' },
+          { prompt: '4. S ___ ___ P ➔ soap (wash hands)', line: 'soap' },
+          { prompt: '5. Y E L L ___ ___ ➔ yellow (yellow sun)', line: 'yellow' },
+          { prompt: '6. B ___ ___ L ➔ bowl (cereal bowl)', line: 'bowl' }
         ]
       }
     ],
@@ -323,13 +323,13 @@ export const oxfordPhonicsWorksheets: WorksheetData[] = [
 
   // 10. Double O Teams (OO Short & Long)
   {
-    id: 'g2_oxford_vowel_oo',
+    id: 'g2_letter_combo_vowel_oo',
     grade: 2,
     category: 'phonics',
     isFree: true,
-    titleEn: 'Oxford Phonics: Double "OO" Sounds',
+    titleEn: 'Double Vowel Teams: "OO" Sounds',
     titleKa: 'ორმაგი OO ბგერები (Moon, Book, Spoon...)',
-    topicEn: 'Long /u:/ (Moon, Spoon, Zoo, Pool) vs. Short /ʊ/ (Book, Foot, Wood, Look)',
+    topicEn: 'Long /u:/ (Moon, Spoon, Zoo) vs. Short /ʊ/ (Book, Foot, Wood)',
     topicKa: 'OO მოკლე და გრძელი ბგერები',
     difficulty: 'Medium',
     instructionsEn: 'Complete the words with "oo" and read them aloud.',
@@ -338,15 +338,15 @@ export const oxfordPhonicsWorksheets: WorksheetData[] = [
     previewArt: 'treehouse',
     sections: [
       {
-        headingEn: 'Trace and Complete with "OO":',
+        headingEn: 'Complete with "OO":',
         headingKa: 'სავარჯიშო',
         items: [
-          { prompt: '1. M ___ ___ N ➔ moon (shines in night sky)', trace: 'moon', line: 'm o o n' },
-          { prompt: '2. B ___ ___ K ➔ book (read funny story)', trace: 'book', line: 'b o o k' },
+          { prompt: '1. M ___ ___ N ➔ moon (night sky)', trace: 'moon', line: 'm o o n' },
+          { prompt: '2. B ___ ___ K ➔ book (story book)', trace: 'book', line: 'b o o k' },
           { prompt: '3. S P ___ ___ N ➔ spoon (eat yogurt)', trace: 'spoon', line: 's p o o n' },
-          { prompt: '4. F ___ ___ T ➔ foot (stand on one foot)', trace: 'foot', line: 'f o o t' },
-          { prompt: '5. Z ___ ___ ➔ zoo (visit wild animals)', trace: 'zoo', line: 'z o o' },
-          { prompt: '6. W ___ ___ D ➔ wood (tree wood for fire)', trace: 'wood', line: 'w o o d' }
+          { prompt: '4. F ___ ___ T ➔ foot (stand on foot)', trace: 'foot', line: 'f o o t' },
+          { prompt: '5. Z ___ ___ ➔ zoo (wild animals)', trace: 'zoo', line: 'z o o' },
+          { prompt: '6. W ___ ___ D ➔ wood (tree wood)', trace: 'wood', line: 'w o o d' }
         ]
       }
     ],

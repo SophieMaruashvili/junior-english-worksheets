@@ -11,7 +11,7 @@ import { GradeLevel, SubjectCategory, Language, WorksheetData } from './types';
 
 export const App: React.FC = () => {
   const [lang, setLang] = useState<Language>('ka');
-  const [selectedGrade, setSelectedGrade] = useState<GradeLevel>(2);
+  const [selectedGrade, setSelectedGrade] = useState<GradeLevel>(1);
   const [selectedCategory, setSelectedCategory] = useState<SubjectCategory>('all');
   const [selectedWorksheet, setSelectedWorksheet] = useState<WorksheetData | null>(null);
   const [isShareModalOpen, setIsShareModalOpen] = useState(false);
@@ -44,13 +44,13 @@ export const App: React.FC = () => {
       <HeroBanner
         lang={lang}
         onExploreFree={() => {
-          setSelectedGrade(2);
+          setSelectedGrade(1);
           setSelectedCategory('all');
           window.scrollTo({ top: 380, behavior: 'smooth' });
         }}
       />
 
-      {/* Grade Selector & Topic Pills */}
+      {/* 4 Grade Level Cards & Topic Filter Pills */}
       <GradeSelector
         selectedGrade={selectedGrade}
         onSelectGrade={(grade) => {
