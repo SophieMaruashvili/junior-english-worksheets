@@ -6,7 +6,7 @@ import { WorksheetCatalog } from './components/WorksheetCatalog';
 import { WorksheetViewerModal } from './components/WorksheetViewerModal';
 import { ShareModal } from './components/ShareModal';
 import { SyllabusModal } from './components/SyllabusModal';
-import { allWorksheets } from './data/worksheetsCurriculum';
+import { allWorksheetsWithAlphabet } from './data/worksheetsCurriculum';
 import { GradeLevel, SubjectCategory, Language, WorksheetData } from './types';
 
 export const App: React.FC = () => {
@@ -21,7 +21,11 @@ export const App: React.FC = () => {
     setLang((prev) => (prev === 'ka' ? 'en' : 'ka'));
   };
 
-  const filteredWorksheets = allWorksheets.filter((w) => {
+  const filteredWorksheets = allWorksheetsWithAlphabet.filter((w) => {
+    // If category is alphabet, show all alphabet worksheets across grades (default grade 1)
+    if (selectedCategory === 'alphabet') {
+      return w.category === 'alphabet';
+    }
     const matchesGrade = w.grade === selectedGrade;
     const matchesCategory = selectedCategory === 'all' || w.category === selectedCategory;
     return matchesGrade && matchesCategory;
@@ -50,13 +54,18 @@ export const App: React.FC = () => {
       {/* Grade Selector & Topic Pills */}
       <GradeSelector
         selectedGrade={selectedGrade}
-        onSelectGrade={setSelectedGrade}
+        onSelectGrade={(grade) => {
+          setSelectedGrade(grade);
+          if (selectedCategory === 'alphabet' && grade !== 1) {
+            setSelectedCategory('all');
+          }
+        }}
         selectedCategory={selectedCategory}
         onSelectCategory={setSelectedCategory}
         lang={lang}
       />
 
-      {/* Worksheets Grid - 100% Free & Open */}
+      {/* Worksheets Grid */}
       <WorksheetCatalog
         worksheets={filteredWorksheets}
         onSelectWorksheet={(sheet) => setSelectedWorksheet(sheet)}

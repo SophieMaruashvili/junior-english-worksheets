@@ -699,3 +699,10 @@ export const fullCurriculumSyllabus = [
     ]
   }
 ];
+
+import { alphabetWorksheets } from './alphabetWorksheets';
+
+export const allWorksheetsWithAlphabet: WorksheetData[] = [
+  ...alphabetWorksheets,
+  ...allWorksheets
+];

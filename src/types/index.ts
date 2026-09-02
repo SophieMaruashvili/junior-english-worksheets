@@ -1,11 +1,19 @@
 export type GradeLevel = 1 | 2 | 3 | 4;
-export type SubjectCategory = 'all' | 'phonics' | 'grammar' | 'vocabulary' | 'reading' | 'writing';
+
+export type SubjectCategory = 'all' | 'alphabet' | 'phonics' | 'grammar' | 'vocabulary' | 'reading';
+
 export type Language = 'ka' | 'en';
+
+export interface WorksheetSection {
+  headingEn: string;
+  headingKa: string;
+  items: any[];
+}
 
 export interface WorksheetData {
   id: string;
   grade: GradeLevel;
-  category: 'phonics' | 'grammar' | 'vocabulary' | 'reading' | 'writing';
+  category: SubjectCategory;
   isFree: boolean;
   titleEn: string;
   titleKa: string;
@@ -16,22 +24,7 @@ export interface WorksheetData {
   instructionsKa: string;
   icon: string;
   previewArt: string;
-  sections: {
-    headingEn: string;
-    headingKa: string;
-    items: any[];
-  }[];
+  letter?: string;
+  sections: WorksheetSection[];
   answerKey: string[];
-}
-
-export interface PricingPlan {
-  id: string;
-  titleEn: string;
-  titleKa: string;
-  priceGel: number;
-  originalPriceGel: number;
-  isPopular?: boolean;
-  badge?: string;
-  featuresEn: string[];
-  featuresKa: string[];
 }
