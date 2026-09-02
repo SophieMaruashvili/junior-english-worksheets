@@ -10,6 +10,7 @@ import { ShareModal } from './components/ShareModal';
 import { SyllabusModal } from './components/SyllabusModal';
 import { allWorksheets, pricingPlans } from './data/worksheetsCurriculum';
 import { GradeLevel, SubjectCategory, Language, WorksheetData, PricingPlan } from './types';
+import { Sparkles, CheckCircle2, ShieldCheck } from 'lucide-react';
 
 export const App: React.FC = () => {
   const [lang, setLang] = useState<Language>('ka');
@@ -39,9 +40,8 @@ export const App: React.FC = () => {
     setSelectedPlanForCheckout(null);
   };
 
-  // Directly open checkout window with BOG/TBC bank account details
   const handleOpenCheckoutDirectly = (plan?: PricingPlan) => {
-    setSelectedPlanForCheckout(plan || pricingPlans[1]); // Default to popular 9.90 GEL Mega Bundle
+    setSelectedPlanForCheckout(plan || pricingPlans[1]);
   };
 
   const filteredWorksheets = allWorksheets.filter((w) => {
@@ -62,6 +62,48 @@ export const App: React.FC = () => {
         onOpenShare={() => setIsShareModalOpen(true)}
         onOpenSyllabus={() => setIsSyllabusOpen(true)}
       />
+
+      {/* Persistent VIP Unlocked Banner if Paid */}
+      {isUnlocked && (
+        <div 
+          className="no-print" 
+          style={{
+            background: 'linear-gradient(135deg, #10B981, #059669)',
+            color: '#FFF',
+            padding: '12px 20px',
+            borderRadius: '16px',
+            marginTop: '16px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            boxShadow: '0 8px 24px rgba(16, 185, 129, 0.25)',
+            flexWrap: 'wrap',
+            gap: '10px'
+          }}
+        >
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <CheckCircle2 size={24} color="#FFF" />
+            <div>
+              <div style={{ fontWeight: 800, fontSize: '0.98rem' }}>
+                🎉 {lang === 'ka' ? 'თქვენი პრემიუმ წვდომა გააქტიურებულია!' : 'Premium Access is Active!'}
+              </div>
+              <div style={{ fontSize: '0.82rem', opacity: 0.9 }}>
+                {lang === 'ka' ? 'ყველა 150+ ფურცელი (1-4 კლასი) ღიაა — დააჭირეთ ნებისმიერ ფურცელს ამოსაბეჭდად' : 'All 150+ worksheets unlocked — click any sheet to view and print'}
+              </div>
+            </div>
+          </div>
+          <button
+            className="btn-tactile gold"
+            onClick={() => {
+              setSelectedGrade(1);
+              window.scrollTo({ top: 350, behavior: 'smooth' });
+            }}
+            style={{ padding: '8px 16px', fontSize: '0.82rem' }}
+          >
+            <span>{lang === 'ka' ? 'ფურცლების კატალოგი 🖨️' : 'Worksheets Catalog 🖨️'}</span>
+          </button>
+        </div>
+      )}
 
       {/* Hero Promotion Banner */}
       <HeroBanner
@@ -88,11 +130,7 @@ export const App: React.FC = () => {
         worksheets={filteredWorksheets}
         isUnlocked={isUnlocked}
         onSelectWorksheet={(sheet) => {
-          if (sheet.isFree || isUnlocked) {
-            setSelectedWorksheet(sheet);
-          } else {
-            handleOpenCheckoutDirectly(pricingPlans[1]);
-          }
+          setSelectedWorksheet(sheet);
         }}
         onOpenPricing={() => handleOpenCheckoutDirectly(pricingPlans[1])}
         lang={lang}
@@ -122,7 +160,7 @@ export const App: React.FC = () => {
         />
       )}
 
-      {/* Checkout Modal (BOG & TBC Bank Accounts) */}
+      {/* Checkout Modal */}
       {selectedPlanForCheckout && (
         <CheckoutModal
           plan={selectedPlanForCheckout}
