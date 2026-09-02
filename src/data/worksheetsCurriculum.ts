@@ -1,4 +1,4 @@
-import { WorksheetData, PricingPlan } from '../types';
+import { WorksheetData } from '../types';
 
 export const allWorksheets: WorksheetData[] = [
   // ================= GRADE 1 (ESL Pre-A1 Starters) =================
@@ -229,7 +229,7 @@ export const allWorksheets: WorksheetData[] = [
     id: 'g2_magic_e_transformer',
     grade: 2,
     category: 'phonics',
-    isFree: false,
+    isFree: true,
     titleEn: 'Magic Silent "E" Transformation Lab',
     titleKa: 'ჯადოსნური Silent "E" გარდამქმნელი',
     topicEn: 'Vowel Long Sound Shift (a_e, i_e, o_e, u_e)',
@@ -335,7 +335,7 @@ export const allWorksheets: WorksheetData[] = [
     id: 'g3_reading_detective_treehouse',
     grade: 3,
     category: 'reading',
-    isFree: false,
+    isFree: true,
     titleEn: 'Reading Comprehension: My Pet Dog Rusty',
     titleKa: 'ტექსტის გააზრება: ჩემი ძაღლი რასტი',
     topicEn: 'Simple ESL Story, True/False & Short Answers',
@@ -444,7 +444,7 @@ export const allWorksheets: WorksheetData[] = [
     id: 'g4_wh_questions_mystery',
     grade: 4,
     category: 'reading',
-    isFree: false,
+    isFree: true,
     titleEn: 'Question Words: Who, Where, When, Why, What, How',
     titleKa: 'კითხვითი სიტყვები (Who, Where, When, Why, What, How)',
     topicEn: 'Asking & Answering Questions in English',
@@ -473,76 +473,6 @@ export const allWorksheets: WorksheetData[] = [
     answerKey: [
       '1. Who', '2. Where', '3. When', '4. Why',
       '5. What', '6. How', '7. What', '8. Who'
-    ]
-  }
-];
-
-export const pricingPlans: PricingPlan[] = [
-  {
-    id: 'single_grade',
-    titleEn: 'Single Grade Pack',
-    titleKa: 'ერთი კლასის პაკეტი',
-    priceGel: 1.00,
-    originalPriceGel: 15.00,
-    featuresEn: [
-      'Full access to 1 chosen Grade (1, 2, 3, or 4)',
-      '35+ Pure English Printable Activity Worksheets',
-      'Full Answer Keys for Parents & Teachers',
-      'Lifetime Access • Unlimited Home Printing'
-    ],
-    featuresKa: [
-      'წვდომა არჩეულ 1 კლასზე (1, 2, 3 ან მე-4 კლასი)',
-      '35+ სუფთა ინგლისურენოვანი დასაბეჭდი სავარჯიშო',
-      'სრული პასუხების გასაღები (Answer Keys)',
-      'მუდმივი წვდომა • შეუზღუდავი ამობეჭდვა სახლში'
-    ]
-  },
-  {
-    id: 'mega_bundle',
-    titleEn: 'Mega Bundle (Grades 1 to 4)',
-    titleKa: 'სრული მეგა-კრებული (1-4 კლასი)',
-    priceGel: 1.00,
-    originalPriceGel: 45.00,
-    isPopular: true,
-    badge: 'ტესტ-აქცია 🔥 1.00 ₾',
-    featuresEn: [
-      'Instant access to ALL Grades 1, 2, 3, and 4!',
-      '150+ Pure English School Worksheets & Tests',
-      'ESL-Tailored: Phonics, Have got/Has got, Can/Can\'t, Prepositions, Tenses',
-      'Ink-Saver B&W Mode + Full Color Studio Mode',
-      'Teacher-Approved Answer Keys for every worksheet',
-      'One-Time Payment (1.00 GEL) • Lifetime Future Updates'
-    ],
-    featuresKa: [
-      'მყისიერი წვდომა ყველა 1, 2, 3 და მე-4 კლასზე!',
-      '150-ზე მეტი ინგლისურენოვანი სამუშაო ფურცელი',
-      'მორგებულია არამშობლიურენოვან (ESL) ბავშვებზე',
-      'Have/Has got, Can/Can\'t, წინდებულები, დროები, ლექსიკა',
-      'ეკონომიური B&W (Ink Saver) + ფერადი რეჟიმი',
-      'პედაგოგების მიერ შედგენილი პასუხების გასაღები',
-      'სატესტო ფასი (1.00 ₾) • მუდმივი წვდომა'
-    ]
-  },
-  {
-    id: 'teacher_unlimited',
-    titleEn: 'Teacher & Tutor Classroom License',
-    titleKa: 'პედაგოგისა და რეპეტიტორის ლიცენზია',
-    priceGel: 1.00,
-    originalPriceGel: 79.00,
-    badge: 'სკოლებისთვის 🏫',
-    featuresEn: [
-      'Full Commercial & Classroom Multi-Student License',
-      'Print unlimited copies for all your private students',
-      'All 4 Grade Levels + Homework Assignment Pack',
-      'Custom Student Name & Header Customizer',
-      'Priority Support & Printable Certificate of Completion'
-    ],
-    featuresKa: [
-      'სრული საკლასო და სადამრიგებლო ლიცენზია',
-      'შეუზღუდავი ამობეჭდვა ყველა მოსწავლისთვის',
-      'ყველა 4 კლასის სრული სასკოლო პროგრამა',
-      'მოსწავლის სახელის და სათაურის მორგება',
-      'დასრულების ოფიციალური დასაბეჭდი სერტიფიკატი'
     ]
   }
 ];

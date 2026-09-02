@@ -1,47 +1,33 @@
 import React from 'react';
-import { Printer, Lock, Sparkles, CheckCircle, Eye } from 'lucide-react';
+import { Printer, Eye, CheckCircle2 } from 'lucide-react';
 import { WorksheetData, Language } from '../types';
 import { WorkbookArt } from './Illustrations/WorkbookArt';
 
 interface WorksheetCatalogProps {
   worksheets: WorksheetData[];
-  isUnlocked: boolean;
   onSelectWorksheet: (sheet: WorksheetData) => void;
-  onOpenPricing: () => void;
   lang: Language;
 }
 
 export const WorksheetCatalog: React.FC<WorksheetCatalogProps> = ({
   worksheets,
-  isUnlocked,
   onSelectWorksheet,
-  onOpenPricing,
   lang
 }) => {
   return (
     <div className="worksheets-catalog-grid no-print">
       {worksheets.map((sheet) => {
-        const canAccess = sheet.isFree || isUnlocked;
-
         return (
           <div 
             key={sheet.id} 
             className="sheet-preview-card"
             style={{ cursor: 'pointer' }}
-            onClick={() => {
-              if (canAccess) {
-                onSelectWorksheet(sheet);
-              } else {
-                onOpenPricing();
-              }
-            }}
+            onClick={() => onSelectWorksheet(sheet)}
           >
             <div className="sheet-card-header">
-              {/* Badge for Free or Premium */}
-              <div className={`sheet-badge-tag ${sheet.isFree ? 'free' : 'premium'}`}>
-                {sheet.isFree 
-                  ? (lang === 'ka' ? 'უფასო საცდელი ⭐' : 'Free Sample ⭐') 
-                  : (lang === 'ka' ? 'პრემიუმ კრებული 🔒' : 'Premium Lock 🔒')}
+              {/* Ready to Print Badge */}
+              <div className="sheet-badge-tag free">
+                {lang === 'ka' ? 'მზადაა დასაბეჭდად ⭐' : 'Ready to Print ⭐'}
               </div>
 
               {/* Clean Educational Line-Art Vector */}
@@ -67,31 +53,17 @@ export const WorksheetCatalog: React.FC<WorksheetCatalogProps> = ({
               </div>
 
               <div className="sheet-card-footer">
-                {canAccess ? (
-                  <button
-                    className="btn-tactile emerald"
-                    style={{ width: '100%', padding: '10px', fontSize: '0.88rem' }}
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      onSelectWorksheet(sheet);
-                    }}
-                  >
-                    <Eye size={16} />
-                    <span>{lang === 'ka' ? 'ფურცლის გახსნა & ამობეჭდვა 🖨️' : 'Open & Print Worksheet 🖨️'}</span>
-                  </button>
-                ) : (
-                  <button
-                    className="btn-tactile gold"
-                    style={{ width: '100%', padding: '10px', fontSize: '0.88rem' }}
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      onOpenPricing();
-                    }}
-                  >
-                    <Lock size={16} />
-                    <span>{lang === 'ka' ? 'გახსნა (9.90 ₾) 🔓' : 'Unlock (9.90 GEL) 🔓'}</span>
-                  </button>
-                )}
+                <button
+                  className="btn-tactile emerald"
+                  style={{ width: '100%', padding: '10px', fontSize: '0.88rem' }}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    onSelectWorksheet(sheet);
+                  }}
+                >
+                  <Eye size={16} />
+                  <span>{lang === 'ka' ? 'ფურცლის გახსნა & ამობეჭდვა 🖨️' : 'Open & Print Worksheet 🖨️'}</span>
+                </button>
               </div>
             </div>
           </div>

@@ -1,13 +1,10 @@
 import React from 'react';
-import { Globe, Lock, Printer, Sparkles, Share2, BookOpen, Key } from 'lucide-react';
+import { Globe, Printer, Sparkles, Share2, BookOpen } from 'lucide-react';
 import { Language } from '../types';
 
 interface NavbarProps {
   lang: Language;
   onToggleLang: () => void;
-  isUnlocked: boolean;
-  onToggleUnlocked: () => void;
-  onOpenPricing: () => void;
   onOpenShare: () => void;
   onOpenSyllabus: () => void;
 }
@@ -15,9 +12,6 @@ interface NavbarProps {
 export const Navbar: React.FC<NavbarProps> = ({
   lang,
   onToggleLang,
-  isUnlocked,
-  onToggleUnlocked,
-  onOpenPricing,
   onOpenShare,
   onOpenSyllabus
 }) => {
@@ -42,10 +36,10 @@ export const Navbar: React.FC<NavbarProps> = ({
         <button 
           className="btn-tactile outline"
           onClick={onOpenSyllabus}
-          style={{ padding: '8px 12px', fontSize: '0.82rem', borderColor: '#10B981', color: '#15803D', background: '#F0FDF4' }}
+          style={{ padding: '8px 14px', fontSize: '0.85rem', borderColor: '#10B981', color: '#15803D', background: '#F0FDF4' }}
         >
-          <BookOpen size={15} />
-          <span>{lang === 'ka' ? '📦 რა შედის? (სილაბუსი)' : '📦 Full Syllabus'}</span>
+          <BookOpen size={16} />
+          <span>{lang === 'ka' ? '📦 სრული სილაბუსი' : '📦 Full Syllabus'}</span>
         </button>
 
         {/* Share Button */}
@@ -53,9 +47,9 @@ export const Navbar: React.FC<NavbarProps> = ({
           className="btn-tactile outline"
           onClick={onOpenShare}
           title={lang === 'ka' ? 'გაუზიარე მშობლების ჯგუფში' : 'Share to Group'}
-          style={{ padding: '8px 12px', fontSize: '0.82rem' }}
+          style={{ padding: '8px 14px', fontSize: '0.85rem' }}
         >
-          <Share2 size={15} color="#3A86FF" />
+          <Share2 size={16} color="#3A86FF" />
           <span>{lang === 'ka' ? 'გაზიარება 📲' : 'Share'}</span>
         </button>
 
@@ -63,34 +57,11 @@ export const Navbar: React.FC<NavbarProps> = ({
         <button 
           className="btn-tactile outline"
           onClick={onToggleLang}
-          style={{ padding: '8px 12px', fontSize: '0.82rem' }}
+          style={{ padding: '8px 14px', fontSize: '0.85rem' }}
         >
-          <Globe size={15} />
+          <Globe size={16} />
           <span>{lang === 'ka' ? '🇬🇪 KA' : '🇬🇧 EN'}</span>
         </button>
-
-        {/* Admin / Teacher Instant Unlock Toggle */}
-        <button
-          className="btn-tactile outline"
-          onClick={onToggleUnlocked}
-          title="Toggle Teacher Preview Mode (Unlock all sheets)"
-          style={{ padding: '8px 12px', fontSize: '0.82rem', background: isUnlocked ? '#DCFCE7' : '#FFF', color: isUnlocked ? '#15803D' : '#64748B' }}
-        >
-          <Key size={15} />
-          <span>{isUnlocked ? (lang === 'ka' ? 'მასწავლებლის რეჟიმი: ღიაა ⭐' : 'Admin: Unlocked ⭐') : (lang === 'ka' ? 'სრული გადახედვა 🔑' : 'Admin Preview 🔑')}</span>
-        </button>
-
-        {/* Pricing Button */}
-        {!isUnlocked && (
-          <button 
-            className="btn-tactile gold"
-            onClick={onOpenPricing}
-            style={{ padding: '8px 16px', fontSize: '0.85rem' }}
-          >
-            <Lock size={15} />
-            <span>{lang === 'ka' ? 'შეძენა 9.90 ₾ 🔓' : 'Get All 9.90 GEL 🔓'}</span>
-          </button>
-        )}
       </div>
     </nav>
   );
