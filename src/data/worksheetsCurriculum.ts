@@ -1,48 +1,84 @@
 import { WorksheetData } from '../types';
 
 export const allWorksheets: WorksheetData[] = [
-  // ================= GRADE 1 (ESL Pre-A1 Starters) =================
+  // ==========================================
+  // GRADE 1 (ESL Pre-A1 Starters)
+  // ==========================================
   {
     id: 'g1_cvc_rhymes',
     grade: 1,
     category: 'phonics',
     isFree: true,
-    titleEn: 'CVC Phonics & 3-Letter Word Families',
-    titleKa: 'CVC მოკლე სიტყვები და ფონეტიკა',
-    topicEn: 'Short Vowels: -at, -ig, -og, -un Families',
-    topicKa: '3-ასოიანი სიტყვები (Cat, Hat, Pig, Dog, Sun)',
+    titleEn: 'CVC Phonics: -AT & -AN Families',
+    titleKa: 'CVC მოკლე სიტყვები: -AT და -AN',
+    topicEn: 'Short Vowel "a" Word Families (Cat, Hat, Bat, Mat, Fan, Pan)',
+    topicKa: '3-ასოიანი სიტყვები და რითმები',
     difficulty: 'Easy',
-    instructionsEn: 'Read each 3-letter word, trace the dotted letters, and write the word on the line.',
-    instructionsKa: 'წაიკითხე სიტყვა, გამოწერე წერტილოვანი ასოები და გადაწერე ხაზზე.',
+    instructionsEn: 'Read each 3-letter word, trace the letters, and copy on the handwriting line.',
+    instructionsKa: 'წაიკითხე სიტყვა, გამოწერე ასოები და გადაწერე ხაზზე.',
     icon: 'cat',
     previewArt: 'cat',
     sections: [
       {
-        headingEn: 'Section A: The "-AT" Family (Trace & Write)',
+        headingEn: 'Section A: The "-AT" Family',
         headingKa: 'ჯგუფი A: „-AT“ სიტყვები',
         items: [
           { prompt: '1. c - a - t ➔ cat (says meow!)', trace: 'cat', line: 'c a t' },
-          { prompt: '2. h - a - t ➔ hat (wear it on your head)', trace: 'hat', line: 'h a t' },
+          { prompt: '2. h - a - t ➔ hat (wear on head)', trace: 'hat', line: 'h a t' },
           { prompt: '3. b - a - t ➔ bat (flies at night)', trace: 'bat', line: 'b a t' },
-          { prompt: '4. m - a - t ➔ mat (wipe your shoes)', trace: 'mat', line: 'm a t' }
+          { prompt: '4. m - a - t ➔ mat (wipe shoes)', trace: 'mat', line: 'm a t' }
         ]
       },
       {
-        headingEn: 'Section B: The "-IG", "-OG" & "-UN" Families (Trace & Write)',
-        headingKa: 'ჯგუფი B: „-IG“, „-OG“ და „-UN“ სიტყვები',
+        headingEn: 'Section B: The "-AN" Family',
+        headingKa: 'ჯგუფი B: „-AN“ სიტყვები',
         items: [
-          { prompt: '5. p - i - g ➔ pig (farm animal that says oink)', trace: 'pig', line: 'p i g' },
-          { prompt: '6. d - i - g ➔ dig (dogs dig in the garden)', trace: 'dig', line: 'd i g' },
-          { prompt: '7. d - o - g ➔ dog (says woof-woof!)', trace: 'dog', line: 'd o g' },
-          { prompt: '8. l - o - g ➔ log (a piece of tree wood)', trace: 'log', line: 'l o g' },
-          { prompt: '9. s - u - n ➔ sun (shines bright in the sky)', trace: 'sun', line: 's u n' }
+          { prompt: '5. f - a - n ➔ fan (cools the room)', trace: 'fan', line: 'f a n' },
+          { prompt: '6. p - a - n ➔ pan (cook food)', trace: 'pan', line: 'p a n' },
+          { prompt: '7. m - a - n ➔ man (tall man)', trace: 'man', line: 'm a n' },
+          { prompt: '8. v - a - n ➔ van (big car)', trace: 'van', line: 'v a n' }
         ]
       }
     ],
-    answerKey: [
-      '1. cat', '2. hat', '3. bat', '4. mat',
-      '5. pig', '6. dig', '7. dog', '8. log', '9. sun'
-    ]
+    answerKey: ['1. cat', '2. hat', '3. bat', '4. mat', '5. fan', '6. pan', '7. man', '8. van']
+  },
+  {
+    id: 'g1_cvc_ig_og',
+    grade: 1,
+    category: 'phonics',
+    isFree: true,
+    titleEn: 'CVC Phonics: -IG & -OG Families',
+    titleKa: 'CVC მოკლე სიტყვები: -IG და -OG',
+    topicEn: 'Short Vowels "i" & "o" (Pig, Dig, Big, Dog, Log, Fog)',
+    topicKa: 'მოკლე i და o ხმოვნები',
+    difficulty: 'Easy',
+    instructionsEn: 'Trace the words and write the missing letters.',
+    instructionsKa: 'გამოწერე სიტყვები და ჩასვი გამოტოვებული ასოები.',
+    icon: 'cat',
+    previewArt: 'cat',
+    sections: [
+      {
+        headingEn: 'Section A: The "-IG" Family',
+        headingKa: 'ჯგუფი A',
+        items: [
+          { prompt: '1. p - i - g ➔ pig (farm animal)', trace: 'pig', line: 'p i g' },
+          { prompt: '2. d - i - g ➔ dig (dig a hole)', trace: 'dig', line: 'd i g' },
+          { prompt: '3. b - i - g ➔ big (giant elephant)', trace: 'big', line: 'b i g' },
+          { prompt: '4. w - i - g ➔ wig (costume hair)', trace: 'wig', line: 'w i g' }
+        ]
+      },
+      {
+        headingEn: 'Section B: The "-OG" Family',
+        headingKa: 'ჯგუფი B',
+        items: [
+          { prompt: '5. d - o - g ➔ dog (says woof-woof!)', trace: 'dog', line: 'd o g' },
+          { prompt: '6. l - o - g ➔ log (wooden log)', trace: 'log', line: 'l o g' },
+          { prompt: '7. f - o - g ➔ fog (mist in morning)', trace: 'fog', line: 'f o g' },
+          { prompt: '8. j - o - g ➔ jog (run slowly)', trace: 'jog', line: 'j o g' }
+        ]
+      }
+    ],
+    answerKey: ['1. pig', '2. dig', '3. big', '4. wig', '5. dog', '6. log', '7. fog', '8. jog']
   },
   {
     id: 'g1_seasons_days',
@@ -51,42 +87,39 @@ export const allWorksheets: WorksheetData[] = [
     isFree: true,
     titleEn: '4 Seasons & 7 Days of the Week',
     titleKa: '4 სეზონი და კვირის 7 დღე',
-    topicEn: 'Calendar Vocabulary: Spring, Summer, Autumn, Winter & Days',
+    topicEn: 'Spring, Summer, Autumn, Winter & Days 1 to 7',
     topicKa: 'სეზონები, ამინდი და დღეები',
     difficulty: 'Easy',
-    instructionsEn: 'Trace the seasonal words and write the days of the week in correct order from Monday to Sunday.',
-    instructionsKa: 'გამოწერე სეზონები და დაწერე კვირის დღეები თანმიმდევრობით.',
+    instructionsEn: 'Trace the seasonal words and write the days in correct order.',
+    instructionsKa: 'გამოწერე სეზონები და დაალაგე დღეები.',
     icon: 'spring',
     previewArt: 'spring',
     sections: [
       {
-        headingEn: 'Section A: The 4 Seasons (Trace & Learn)',
-        headingKa: 'ნაწილი A: 4 სეზონი',
+        headingEn: 'The 4 Seasons',
+        headingKa: '4 სეზონი',
         items: [
-          { prompt: '1. Spring (green leaves and flowers bloom)', trace: 'Spring', line: 'S p r i n g' },
-          { prompt: '2. Summer (hot and sunny weather)', trace: 'Summer', line: 'S u m m e r' },
-          { prompt: '3. Autumn (golden leaves fall from trees)', trace: 'Autumn', line: 'A u t u m n' },
-          { prompt: '4. Winter (cold weather and white snow)', trace: 'Winter', line: 'W i n t e r' }
+          { prompt: '1. Spring (flowers bloom)', trace: 'Spring', line: 'S p r i n g' },
+          { prompt: '2. Summer (hot and sunny)', trace: 'Summer', line: 'S u m m e r' },
+          { prompt: '3. Autumn (leaves fall)', trace: 'Autumn', line: 'A u t u m n' },
+          { prompt: '4. Winter (cold and snow)', trace: 'Winter', line: 'W i n t e r' }
         ]
       },
       {
-        headingEn: 'Section B: Days of the Week (Monday to Sunday)',
-        headingKa: 'ნაწილი B: კვირის დღეები',
+        headingEn: 'Days of the Week (Order 1 to 7)',
+        headingKa: 'კვირის დღეები',
         items: [
-          { prompt: '• Day 1: Monday (start of the school week)', trace: 'Monday', line: 'M o n d a y' },
-          { prompt: '• Day 2: Tuesday', trace: 'Tuesday', line: 'T u e s d a y' },
-          { prompt: '• Day 3: Wednesday (middle of the week)', trace: 'Wednesday', line: 'W e d n e s d a y' },
-          { prompt: '• Day 4: Thursday', trace: 'Thursday', line: 'T h u r s d a y' },
-          { prompt: '• Day 5: Friday (last school day)', trace: 'Friday', line: 'F r i d a y' },
-          { prompt: '• Day 6: Saturday (weekend playtime)', trace: 'Saturday', line: 'S a t u r d a y' },
-          { prompt: '• Day 7: Sunday (family rest day)', trace: 'Sunday', line: 'S u n d a y' }
+          { prompt: '• Monday ➔ Day 1', trace: 'Monday', line: 'M o n d a y' },
+          { prompt: '• Tuesday ➔ Day 2', trace: 'Tuesday', line: 'T u e s d a y' },
+          { prompt: '• Wednesday ➔ Day 3', trace: 'Wednesday', line: 'W e d n e s d a y' },
+          { prompt: '• Thursday ➔ Day 4', trace: 'Thursday', line: 'T h u r s d a y' },
+          { prompt: '• Friday ➔ Day 5', trace: 'Friday', line: 'F r i d a y' },
+          { prompt: '• Saturday ➔ Day 6', trace: 'Saturday', line: 'S a t u r d a y' },
+          { prompt: '• Sunday ➔ Day 7', trace: 'Sunday', line: 'S u n d a y' }
         ]
       }
     ],
-    answerKey: [
-      'Spring, Summer, Autumn, Winter',
-      'Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday'
-    ]
+    answerKey: ['Spring, Summer, Autumn, Winter', 'Monday to Sunday (1 to 7)']
   },
   {
     id: 'g1_color_sight_words',
@@ -95,10 +128,10 @@ export const allWorksheets: WorksheetData[] = [
     isFree: true,
     titleEn: 'Sight Words & Color Sentences',
     titleKa: 'პირველი საკვანძო სიტყვები (Sight Words)',
-    topicEn: 'Basic Sight Words: I see, I have, It is, Look at',
-    topicKa: 'მარტივი წინადადებები (I see, It is, I have)',
+    topicEn: 'I see, I have, It is, Look at, Like',
+    topicKa: 'მარტივი წინადადებები',
     difficulty: 'Easy',
-    instructionsEn: 'Complete the sentences using words from the Word Bank: [ SEE , HAVE , IS , LIKE , LOOK ].',
+    instructionsEn: 'Complete sentences using the Word Bank: [ SEE , HAVE , IS , LIKE , LOOK ].',
     instructionsKa: 'შეავსე წინადადებები მოცემული სიტყვებით.',
     icon: 'rainbow',
     previewArt: 'rainbow',
@@ -107,19 +140,79 @@ export const allWorksheets: WorksheetData[] = [
         headingEn: 'Word Bank: [ SEE , HAVE , IS , LIKE , LOOK ]',
         headingKa: 'სიტყვათა ბანკი',
         items: [
-          { sentence: '1. I ________ a little yellow duck in the water.', hint: 'Word: see', line: 'see' },
-          { sentence: '2. It ________ a sunny warm day today.', hint: 'Word: is', line: 'is' },
-          { sentence: '3. I ________ two small dogs at home.', hint: 'Word: have', line: 'have' },
-          { sentence: '4. I ________ sweet red apples and bananas.', hint: 'Word: like', line: 'like' },
-          { sentence: '5. ________ at the colorful rainbow in the sky!', hint: 'Word: Look', line: 'Look' },
-          { sentence: '6. I ________ a big blue school bag.', hint: 'Word: have', line: 'have' }
+          { sentence: '1. I ________ a little yellow duck.', hint: 'Word: see', line: 'see' },
+          { sentence: '2. It ________ a sunny warm day.', hint: 'Word: is', line: 'is' },
+          { sentence: '3. I ________ two small dogs.', hint: 'Word: have', line: 'have' },
+          { sentence: '4. I ________ sweet red apples.', hint: 'Word: like', line: 'like' },
+          { sentence: '5. ________ at the rainbow in the sky!', hint: 'Word: Look', line: 'Look' },
+          { sentence: '6. I ________ a blue school bag.', hint: 'Word: have', line: 'have' }
         ]
       }
     ],
     answerKey: ['1. see', '2. is', '3. have', '4. like', '5. Look', '6. have']
   },
+  {
+    id: 'g1_animals_numbers',
+    grade: 1,
+    category: 'vocabulary',
+    isFree: true,
+    titleEn: 'Animal Safari & Number Counting (1 to 10)',
+    titleKa: 'ცხოველები და ციფრები 1-დან 10-მდე',
+    topicEn: 'Count and Name: Dog, Cat, Lion, Elephant, Bird, Duck',
+    topicKa: 'დათვლა და ცხოველთა სახელები',
+    difficulty: 'Easy',
+    instructionsEn: 'Count the animals, write the number word (one to ten), and trace.',
+    instructionsKa: 'დაითვალე ცხოველები და დაწერე ციფრი სიტყვიერად.',
+    icon: 'rainbow',
+    previewArt: 'rainbow',
+    sections: [
+      {
+        headingEn: 'Count & Write (One to Ten)',
+        headingKa: 'დაითვალე და დაწერე',
+        items: [
+          { prompt: '1. [ 1 ] dog ➔ one dog', trace: 'one', line: 'o n e' },
+          { prompt: '2. [ 2 ] cats ➔ two cats', trace: 'two', line: 't w o' },
+          { prompt: '3. [ 3 ] birds ➔ three birds', trace: 'three', line: 't h r e e' },
+          { prompt: '4. [ 4 ] frogs ➔ four frogs', trace: 'four', line: 'f o u r' },
+          { prompt: '5. [ 5 ] ducks ➔ five ducks', trace: 'five', line: 'f i v e' }
+        ]
+      }
+    ],
+    answerKey: ['one, two, three, four, five']
+  },
+  {
+    id: 'g1_classroom_objects',
+    grade: 1,
+    category: 'vocabulary',
+    isFree: true,
+    titleEn: 'Classroom Objects & "This is a..."',
+    titleKa: 'სასკოლო ნივთები (Pencil, Book, Bag...)',
+    topicEn: 'Pencil, Book, Bag, Ruler, Eraser, Desk',
+    topicKa: 'სასკოლო ლექსიკა',
+    difficulty: 'Easy',
+    instructionsEn: 'Complete the sentence with the correct school object from the Word Bank.',
+    instructionsKa: 'ჩასვი შესაბამისი სასკოლო ნივთი.',
+    icon: 'rainbow',
+    previewArt: 'rainbow',
+    sections: [
+      {
+        headingEn: 'Word Bank: [ PENCIL , BOOK , BAG , RULER , ERASER ]',
+        headingKa: 'სიტყვათა ბანკი',
+        items: [
+          { sentence: '1. I write my name with a ________.', line: 'pencil' },
+          { sentence: '2. I read an English story in my ________.', line: 'book' },
+          { sentence: '3. I put all my school things in my ________.', line: 'bag' },
+          { sentence: '4. I draw straight lines with a ________.', line: 'ruler' },
+          { sentence: '5. I clean pencil marks with an ________.', line: 'eraser' }
+        ]
+      }
+    ],
+    answerKey: ['1. pencil', '2. book', '3. bag', '4. ruler', '5. eraser']
+  },
 
-  // ================= GRADE 2 (ESL Pre-A1 to A1 Beginners) =================
+  // ==========================================
+  // GRADE 2 (ESL Pre-A1 to A1 Beginners)
+  // ==========================================
   {
     id: 'g2_have_got_has_got',
     grade: 2,
@@ -127,33 +220,28 @@ export const allWorksheets: WorksheetData[] = [
     isFree: true,
     titleEn: 'Have Got / Has Got (My Toys & Pets)',
     titleKa: 'Have got / Has got (ქონა და ყოლა)',
-    topicEn: 'Expressing Possession: I have got / He has got / She has got',
-    topicKa: 'have got და has got-ის გარჩევა და გამოყენება',
+    topicEn: 'Possession: I have got / He has got / She has got',
+    topicKa: 'have got და has got-ის წესები',
     difficulty: 'Easy',
-    instructionsEn: 'Fill in the blanks with "have got" (for I, You, We, They) or "has got" (for He, She, It).',
-    instructionsKa: 'ჩასვი "have got" ან "has got" ნაცვალსახელის მიხედვით.',
+    instructionsEn: 'Fill in the blanks with "have got" (I/You/We/They) or "has got" (He/She/It).',
+    instructionsKa: 'ჩასვი have got ან has got.',
     icon: 'cat',
     previewArt: 'cat',
     sections: [
       {
         headingEn: 'Rule: [ I / You / We / They ➔ HAVE GOT ] | [ He / She / It ➔ HAS GOT ]',
-        headingKa: 'წესი: I/You/We/They ➔ have got, He/She/It ➔ has got',
+        headingKa: 'წესი',
         items: [
-          { sentence: '1. I ____________________ a new red bicycle.', hint: 'Subject: I', line: 'have got' },
-          { sentence: '2. He ____________________ a small white kitten.', hint: 'Subject: He', line: 'has got' },
-          { sentence: '3. She ____________________ three blue pencils.', hint: 'Subject: She', line: 'has got' },
-          { sentence: '4. We ____________________ a big green garden.', hint: 'Subject: We', line: 'have got' },
-          { sentence: '5. They ____________________ two friendly dogs.', hint: 'Subject: They', line: 'have got' },
-          { sentence: '6. The cat ____________________ green eyes.', hint: 'Subject: The cat (It)', line: 'has got' },
-          { sentence: '7. Anna ____________________ a warm winter jacket.', hint: 'Subject: Anna (She)', line: 'has got' },
-          { sentence: '8. You ____________________ an English book.', hint: 'Subject: You', line: 'have got' }
+          { sentence: '1. I ____________________ a new red bicycle.', line: 'have got' },
+          { sentence: '2. He ____________________ a small white kitten.', line: 'has got' },
+          { sentence: '3. She ____________________ three blue pencils.', line: 'has got' },
+          { sentence: '4. We ____________________ a big green garden.', line: 'have got' },
+          { sentence: '5. They ____________________ two friendly dogs.', line: 'have got' },
+          { sentence: '6. The cat ____________________ green eyes.', line: 'has got' }
         ]
       }
     ],
-    answerKey: [
-      '1. have got', '2. has got', '3. has got', '4. have got',
-      '5. have got', '6. has got', '7. has got', '8. have got'
-    ]
+    answerKey: ['1. have got', '2. has got', '3. has got', '4. have got', '5. have got', '6. has got']
   },
   {
     id: 'g2_can_cant_abilities',
@@ -166,29 +254,24 @@ export const allWorksheets: WorksheetData[] = [
     topicKa: 'can (შეუძლია) და can\'t (არ შეუძლია)',
     difficulty: 'Easy',
     instructionsEn: 'Complete the sentences with "can" (Yes) or "can\'t" (No).',
-    instructionsKa: 'შეავსე წინადადებები "can" ან "can\'t"-ით.',
+    instructionsKa: 'ჩასვი can ან can\'t.',
     icon: 'shark',
     previewArt: 'shark',
     sections: [
       {
         headingEn: 'Choose: [ CAN (can do) / CAN\'T (cannot do) ]',
-        headingKa: 'შეარჩიე: can ან can\'t',
+        headingKa: 'შეარჩიე',
         items: [
-          { sentence: '1. A bird ________ fly high in the sky.', hint: 'Yes', line: 'can' },
-          { sentence: '2. A fish ________ walk on the road.', hint: 'No', line: 'can\'t' },
-          { sentence: '3. A green frog ________ jump over the water.', hint: 'Yes', line: 'can' },
-          { sentence: '4. An elephant ________ fly in the air.', hint: 'No', line: 'can\'t' },
-          { sentence: '5. A dolphin ________ swim very fast.', hint: 'Yes', line: 'can' },
-          { sentence: '6. I ________ read English words.', hint: 'Yes', line: 'can' },
-          { sentence: '7. A snake ________ run with shoes.', hint: 'No', line: 'can\'t' },
-          { sentence: '8. A monkey ________ climb tall trees.', hint: 'Yes', line: 'can' }
+          { sentence: '1. A bird ________ fly high in the sky.', line: 'can' },
+          { sentence: '2. A fish ________ walk on the road.', line: 'can\'t' },
+          { sentence: '3. A green frog ________ jump over the water.', line: 'can' },
+          { sentence: '4. An elephant ________ fly in the air.', line: 'can\'t' },
+          { sentence: '5. A dolphin ________ swim very fast.', line: 'can' },
+          { sentence: '6. A monkey ________ climb tall trees.', line: 'can' }
         ]
       }
     ],
-    answerKey: [
-      '1. can', '2. can\'t', '3. can', '4. can\'t',
-      '5. can', '6. can', '7. can\'t', '8. can'
-    ]
+    answerKey: ['1. can', '2. can\'t', '3. can', '4. can\'t', '5. can', '6. can']
   },
   {
     id: 'g2_prepositions_place',
@@ -197,33 +280,28 @@ export const allWorksheets: WorksheetData[] = [
     isFree: true,
     titleEn: 'Prepositions of Place: In, On, Under, Next to',
     titleKa: 'წინდებულები: In, On, Under, Next to',
-    topicEn: 'Locating objects: In the box, On the table, Under the bed, Next to the door',
-    topicKa: 'მდებარეობის წინდებულები (In, On, Under, Next to)',
+    topicEn: 'Where is it? In the box, On the table, Under the bed, Next to the chair',
+    topicKa: 'მდებარეობის წინდებულები',
     difficulty: 'Easy',
-    instructionsEn: 'Look at the clues and write the correct preposition: [ IN , ON , UNDER , NEXT TO ].',
-    instructionsKa: 'ჩასვი სწორი წინდებული: in (შიგნით), on (ზემოთ), under (ქვეშ), next to (გვერდით).',
+    instructionsEn: 'Write the correct preposition: [ IN , ON , UNDER , NEXT TO ].',
+    instructionsKa: 'ჩასვი სწორი წინდებული.',
     icon: 'treehouse',
     previewArt: 'treehouse',
     sections: [
       {
-        headingEn: 'Word Bank: [ IN , ON , UNDER , NEXT TO ]',
+        headingEn: 'Word Bank: [ IN (შიგნით) , ON (ზემოთ) , UNDER (ქვეშ) , NEXT TO (გვერდით) ]',
         headingKa: 'სიტყვათა ბანკი',
         items: [
-          { sentence: '1. The cat is sleeping ________ the bed.', hint: 'on (ზემოთ)', line: 'on' },
-          { sentence: '2. The pencil is ________ the pencil case.', hint: 'in (შიგნით)', line: 'in' },
-          { sentence: '3. The dog is sleeping ________ the table.', hint: 'under (ქვეშ)', line: 'under' },
-          { sentence: '4. The chair is ________ the desk.', hint: 'next to (გვერდით)', line: 'next to' },
-          { sentence: '5. The apples are ________ the fruit basket.', hint: 'in (შიგნით)', line: 'in' },
-          { sentence: '6. The storybook is ________ the shelf.', hint: 'on (ზემოთ)', line: 'on' },
-          { sentence: '7. My shoes are ________ the chair.', hint: 'under (ქვეშ)', line: 'under' },
-          { sentence: '8. Anna sits ________ her friend in class.', hint: 'next to (გვერდით)', line: 'next to' }
+          { sentence: '1. The cat is sleeping ________ the bed.', line: 'on' },
+          { sentence: '2. The pencil is ________ the pencil case.', line: 'in' },
+          { sentence: '3. The dog is sleeping ________ the table.', line: 'under' },
+          { sentence: '4. The chair is ________ the desk.', line: 'next to' },
+          { sentence: '5. The apples are ________ the fruit basket.', line: 'in' },
+          { sentence: '6. The book is ________ the shelf.', line: 'on' }
         ]
       }
     ],
-    answerKey: [
-      '1. on', '2. in', '3. under', '4. next to',
-      '5. in', '6. on', '7. under', '8. next to'
-    ]
+    answerKey: ['1. on', '2. in', '3. under', '4. next to', '5. in', '6. on']
   },
   {
     id: 'g2_magic_e_transformer',
@@ -232,33 +310,93 @@ export const allWorksheets: WorksheetData[] = [
     isFree: true,
     titleEn: 'Magic Silent "E" Transformation Lab',
     titleKa: 'ჯადოსნური Silent "E" გარდამქმნელი',
-    topicEn: 'Vowel Long Sound Shift (a_e, i_e, o_e, u_e)',
-    topicKa: 'გრძელი ხმოვნები და Magic E წესი',
+    topicEn: 'Long Vowels: cap->cape, pin->pine, hop->hope, kit->kite, cut->cute',
+    topicKa: 'გრძელი ხმოვნები და Magic E',
     difficulty: 'Medium',
-    instructionsEn: 'Add Magic "E" to the short 3-letter word and write the new long-vowel word.',
-    instructionsKa: 'დაამატე Magic E მოკლე სიტყვას და დაწერე ახალი სიტყვა.',
+    instructionsEn: 'Add Magic "E" to the short word and write the new word.',
+    instructionsKa: 'დაამატე Magic E და დაწერე ახალი სიტყვა.',
     icon: 'magic_e',
     previewArt: 'magic_e',
     sections: [
       {
-        headingEn: 'Add "E" to make a new word:',
-        headingKa: 'დაამატე "E":',
+        headingEn: 'Add "E" to make long vowel words:',
+        headingKa: 'გარდაქმნის სავარჯიშო',
         items: [
           { short: 'CAP', magicWord: 'CAPE', sentence: '• cap + e ➔ c a p e (superhero cape)' },
           { short: 'PIN', magicWord: 'PINE', sentence: '• pin + e ➔ p i n e (pine tree)' },
-          { short: 'HOP', magicWord: 'HOPE', sentence: '• hop + e ➔ h o p e (hope for good)' },
+          { short: 'HOP', magicWord: 'HOPE', sentence: '• hop + e ➔ h o p e (hope for best)' },
           { short: 'KIT', magicWord: 'KITE', sentence: '• kit + e ➔ k i t e (fly a kite)' },
           { short: 'TUB', magicWord: 'TUBE', sentence: '• tub + e ➔ t u b e (tube of paint)' },
-          { short: 'MAT', magicWord: 'MATE', sentence: '• mat + e ➔ m a t e (team mate)' },
-          { short: 'CUT', magicWord: 'CUTE', sentence: '• cut + e ➔ c u t e (cute puppy)' },
-          { short: 'NOT', magicWord: 'NOTE', sentence: '• not + e ➔ n o t e (write a note)' }
+          { short: 'CUT', magicWord: 'CUTE', sentence: '• cut + e ➔ c u t e (cute puppy)' }
         ]
       }
     ],
-    answerKey: ['cape', 'pine', 'hope', 'kite', 'tube', 'mate', 'cute', 'note']
+    answerKey: ['cape, pine, hope, kite, tube, cute']
+  },
+  {
+    id: 'g2_digraphs_ch_sh',
+    grade: 2,
+    category: 'phonics',
+    isFree: true,
+    titleEn: 'Consonant Digraphs: CH, SH, TH, WH, CK',
+    titleKa: 'ასოთა შეთანხმებები (CH, SH, TH, WH, CK)',
+    topicEn: 'Shark, Cheese, Three, Whale, Clock, Chair, Duck',
+    topicKa: 'ასოთშეთანხმებების წესები',
+    difficulty: 'Medium',
+    instructionsEn: 'Fill in the blanks with [ CH , SH , TH , WH , CK ].',
+    instructionsKa: 'შეავსე [ CH , SH , TH , WH , CK ]-ით.',
+    icon: 'shark',
+    previewArt: 'shark',
+    sections: [
+      {
+        headingEn: 'Word Clues: Complete the Digraphs',
+        headingKa: 'სავარჯიშო',
+        items: [
+          { clue: '1. Ocean animal with fins: ___ A R K', line: 'SHARK' },
+          { clue: '2. Yummy yellow food: ___ E E S E', line: 'CHEESE' },
+          { clue: '3. Number after two: ___ R E E', line: 'THREE' },
+          { clue: '4. Giant sea mammal: ___ A L E', line: 'WHALE' },
+          { clue: '5. Yellow bird that quacks: D U ___', line: 'DUCK' },
+          { clue: '6. Seat with four legs: ___ A I R', line: 'CHAIR' }
+        ]
+      }
+    ],
+    answerKey: ['1. SH (Shark)', '2. CH (Cheese)', '3. TH (Three)', '4. WH (Whale)', '5. CK (Duck)', '6. CH (Chair)']
+  },
+  {
+    id: 'g2_singular_plural_nouns',
+    grade: 2,
+    category: 'grammar',
+    isFree: true,
+    titleEn: 'Singular & Plural Nouns (-s and -es)',
+    titleKa: 'მხოლობითი და მრავლობითი რიცხვი (-s, -es)',
+    topicEn: 'One cat -> Two cats, One box -> Two boxes, One bus -> Two buses',
+    topicKa: 'მრავლობითი რიცხვის დაბოლოებები',
+    difficulty: 'Medium',
+    instructionsEn: 'Convert the singular word into its plural form by adding -s or -es.',
+    instructionsKa: 'გადაიყვანე მრავლობითში (-s ან -es-ით).',
+    icon: 'treehouse',
+    previewArt: 'treehouse',
+    sections: [
+      {
+        headingEn: 'Add -s or -es to make plurals:',
+        headingKa: 'სავარჯიშო',
+        items: [
+          { prompt: '1. One book ➔ Two: ________', line: 'books' },
+          { prompt: '2. One cat ➔ Three: ________', line: 'cats' },
+          { prompt: '3. One box ➔ Four: ________', line: 'boxes' },
+          { prompt: '4. One bus ➔ Two: ________', line: 'buses' },
+          { prompt: '5. One apple ➔ Five: ________', line: 'apples' },
+          { prompt: '6. One watch ➔ Two: ________', line: 'watches' }
+        ]
+      }
+    ],
+    answerKey: ['1. books', '2. cats', '3. boxes', '4. buses', '5. apples', '6. watches']
   },
 
-  // ================= GRADE 3 (ESL A1 Elementary) =================
+  // ==========================================
+  // GRADE 3 (ESL A1 Elementary)
+  // ==========================================
   {
     id: 'g3_parts_of_speech',
     grade: 3,
@@ -266,34 +404,30 @@ export const allWorksheets: WorksheetData[] = [
     isFree: true,
     titleEn: 'Parts of Speech: Nouns, Verbs & Adjectives',
     titleKa: 'მეტყველების ნაწილები (Noun, Verb, Adjective)',
-    topicEn: 'Nouns (Things/People), Verbs (Actions), Adjectives (Describing)',
-    topicKa: 'არსებითი, ზმნა და ზედსართავი სახელი',
+    topicEn: 'Nouns (Things/People), Verbs (Actions), Adjectives (Describing Words)',
+    topicKa: 'არსებითი, ზმნა და ზედსართავი',
     difficulty: 'Medium',
-    instructionsEn: 'Write N for Noun (thing/person), V for Verb (action), or A for Adjective (describing word).',
-    instructionsKa: 'დაწერე N (არსებითი), V (ზმნა) ან A (ზედსართავი).',
+    instructionsEn: 'Write N for Noun, V for Verb, or A for Adjective.',
+    instructionsKa: 'განსაზღვრე მეტყველების ნაწილი (N, V, A).',
     icon: 'treehouse',
     previewArt: 'treehouse',
     sections: [
       {
-        headingEn: 'Classify the words: [ N = Noun , V = Verb , A = Adjective ]',
-        headingKa: 'განსაზღვრე მეტყველების ნაწილი',
+        headingEn: 'Classify: [ N = Noun , V = Verb , A = Adjective ]',
+        headingKa: 'სავარჯიშო',
         items: [
-          { prompt: '1. Elephant (animal)', type: '[ Noun ]', sentence: 'The big elephant drinks water.' },
-          { prompt: '2. Run (action)', type: '[ Verb ]', sentence: 'The children run in the park.' },
-          { prompt: '3. Red (color word)', type: '[ Adjective ]', sentence: 'I like red strawberries.' },
-          { prompt: '4. School (place)', type: '[ Noun ]', sentence: 'We go to elementary school.' },
-          { prompt: '5. Jump (action)', type: '[ Verb ]', sentence: 'Frogs can jump very high.' },
-          { prompt: '6. Happy (feeling)', type: '[ Adjective ]', sentence: 'The happy boy smiles.' },
-          { prompt: '7. Apple (fruit)', type: '[ Noun ]', sentence: 'Mom bought three apples.' },
-          { prompt: '8. Read (action)', type: '[ Verb ]', sentence: 'I read an English storybook.' },
-          { prompt: '9. Fast (describing)', type: '[ Adjective ]', sentence: 'The cheetah is a fast runner.' }
+          { prompt: '1. Elephant (animal)', line: 'Noun' },
+          { prompt: '2. Run (action)', line: 'Verb' },
+          { prompt: '3. Red (color)', line: 'Adjective' },
+          { prompt: '4. School (place)', line: 'Noun' },
+          { prompt: '5. Jump (action)', line: 'Verb' },
+          { prompt: '6. Happy (feeling)', line: 'Adjective' },
+          { prompt: '7. Apple (fruit)', line: 'Noun' },
+          { prompt: '8. Read (action)', line: 'Verb' }
         ]
       }
     ],
-    answerKey: [
-      '1. Noun', '2. Verb', '3. Adjective', '4. Noun', '5. Verb',
-      '6. Adjective', '7. Noun', '8. Verb', '9. Adjective'
-    ]
+    answerKey: ['1. Noun', '2. Verb', '3. Adjective', '4. Noun', '5. Verb', '6. Adjective', '7. Noun', '8. Verb']
   },
   {
     id: 'g3_present_simple_continuous',
@@ -302,34 +436,28 @@ export const allWorksheets: WorksheetData[] = [
     isFree: true,
     titleEn: 'Present Simple vs. Present Continuous (Right Now)',
     titleKa: 'Present Simple vs. Present Continuous',
-    topicEn: 'Habits (plays, drinks) vs. Right Now (is playing, is drinking)',
-    topicKa: 'ჩვეულებრივი მოქმედება vs ახლა მიმდინარე',
+    topicEn: 'Habits (plays, drinks) vs. Right Now (is swimming, is singing)',
+    topicKa: 'ყოველდღიური vs მიმდინარე დრო',
     difficulty: 'Medium',
-    instructionsEn: 'Choose the correct form: Present Simple (every day) or Present Continuous (right now).',
-    instructionsKa: 'შეარჩიე სწორი დრო (ყოველდღიური მოქმედება თუ ახლა მიმდინარე).',
+    instructionsEn: 'Complete the sentence with the correct form of the verb.',
+    instructionsKa: 'ჩასვი ზმნა სწორ დროში.',
     icon: 'treehouse',
     previewArt: 'treehouse',
     sections: [
       {
-        headingEn: 'Complete with the correct verb form:',
-        headingKa: 'შეავსე სწორი ფორმით:',
+        headingEn: 'Choose: Simple (Everyday) vs Continuous (Now)',
+        headingKa: 'სავარჯიშო',
         items: [
           { sentence: '1. Look! The boy (swim) ________________ in the pool right now.', line: 'is swimming' },
           { sentence: '2. She always (drink) ________________ warm milk every morning.', line: 'drinks' },
-          { sentence: '3. Listen! The birds (sing) ________________ in the tree right now.', line: 'are singing' },
+          { sentence: '3. Listen! The birds (sing) ________________ in the tree.', line: 'are singing' },
           { sentence: '4. We (go) ________________ to school from Monday to Friday.', line: 'go' },
           { sentence: '5. Look! Dad (wash) ________________ the car outside.', line: 'is washing' },
-          { sentence: '6. Cats (like) ________________ fresh fish and milk.', line: 'like' },
-          { sentence: '7. Be quiet! The baby (sleep) ________________ in the bedroom.', line: 'is sleeping' },
-          { sentence: '8. My brother usually (play) ________________ soccer on Saturdays.', line: 'plays' }
+          { sentence: '6. Cats (like) ________________ milk and fish.', line: 'like' }
         ]
       }
     ],
-    answerKey: [
-      '1. is swimming (now)', '2. drinks (routine)', '3. are singing (listen/now)',
-      '4. go (habit)', '5. is washing (look/now)', '6. like (fact)',
-      '7. is sleeping (now)', '8. plays (routine)'
-    ]
+    answerKey: ['1. is swimming', '2. drinks', '3. are singing', '4. go', '5. is washing', '6. like']
   },
   {
     id: 'g3_reading_detective_treehouse',
@@ -338,16 +466,16 @@ export const allWorksheets: WorksheetData[] = [
     isFree: true,
     titleEn: 'Reading Comprehension: My Pet Dog Rusty',
     titleKa: 'ტექსტის გააზრება: ჩემი ძაღლი რასტი',
-    topicEn: 'Simple ESL Story, True/False & Short Answers',
-    topicKa: 'მარტივი მოთხრობის წაკითხვა და გააზრება',
+    topicEn: 'Story Analysis & Answering 5 Direct Questions',
+    topicKa: 'ტექსტის წაკითხვა და კითხვებზე პასუხი',
     difficulty: 'Medium',
-    instructionsEn: 'Read the short story and answer the questions below.',
+    instructionsEn: 'Read the short narrative passage and answer all questions in full sentences.',
     instructionsKa: 'წაიკითხე მოთხრობა და უპასუხე კითხვებს.',
     icon: 'treehouse',
     previewArt: 'treehouse',
     sections: [
       {
-        headingEn: 'Story Passage: My Pet Dog Rusty',
+        headingEn: 'Story Passage',
         headingKa: 'მოთხრობა',
         items: [
           {
@@ -363,13 +491,41 @@ export const allWorksheets: WorksheetData[] = [
         ]
       }
     ],
-    answerKey: [
-      '1. Lucas', '2. A golden puppy (Rusty)', '3. To the green park',
-      '4. Red ball', '5. Drinks water and eats dog food'
-    ]
+    answerKey: ['1. Lucas', '2. Golden puppy (Rusty)', '3. To the green park', '4. Red', '5. Drinks water and eats dog food']
+  },
+  {
+    id: 'g3_demonstratives_this_that',
+    grade: 3,
+    category: 'grammar',
+    isFree: true,
+    titleEn: 'Demonstratives: This, That, These, Those',
+    titleKa: 'ჩვენებითი ნაცვალსახელები (This, That, These, Those)',
+    topicEn: 'Near (This / These) vs Far (That / Those)',
+    topicKa: 'This, That, These, Those-ის გამოყენება',
+    difficulty: 'Medium',
+    instructionsEn: 'Choose the correct demonstrative pronoun: [ THIS , THAT , THESE , THOSE ].',
+    instructionsKa: 'შეარჩიე სწორი ნაცვალსახელი.',
+    icon: 'treehouse',
+    previewArt: 'treehouse',
+    sections: [
+      {
+        headingEn: 'Near vs Far Pointer Exercise',
+        headingKa: 'სავარჯიშო',
+        items: [
+          { sentence: '1. ________ is my pencil in my hand (Near, Singular).', line: 'This' },
+          { sentence: '2. ________ is an airplane high in the sky (Far, Singular).', line: 'That' },
+          { sentence: '3. ________ are my new books on my desk (Near, Plural).', line: 'These' },
+          { sentence: '4. ________ are white clouds over the mountain (Far, Plural).', line: 'Those' },
+          { sentence: '5. Look here! ________ is a cute little kitten (Near).', line: 'This' }
+        ]
+      }
+    ],
+    answerKey: ['1. This', '2. That', '3. These', '4. Those', '5. This']
   },
 
-  // ================= GRADE 4 (ESL A1+ to A2 Elementary) =================
+  // ==========================================
+  // GRADE 4 (ESL A1+ to A2 Elementary)
+  // ==========================================
   {
     id: 'g4_past_simple_irregulars',
     grade: 4,
@@ -377,33 +533,57 @@ export const allWorksheets: WorksheetData[] = [
     isFree: true,
     titleEn: 'Past Simple: Common Irregular Verbs',
     titleKa: 'Past Simple წარსული დრო (არაწესიერი ზმნები)',
-    topicEn: 'Top ESL Past Verbs: went, saw, ate, had, wrote, bought',
-    topicKa: 'ხშირად გამოყენებული არაწესიერი ზმნები',
+    topicEn: 'Top ESL Verbs: went, saw, ate, had, wrote, bought, drank, took',
+    topicKa: 'არაწესიერი ზმნების ფორმები',
     difficulty: 'Medium',
-    instructionsEn: 'Complete each sentence by putting the verb in the Past Simple tense (Yesterday / Last week).',
-    instructionsKa: 'ჩასვი ზმნა Past Simple (წარსულ) დროში.',
+    instructionsEn: 'Change the base verb into Past Simple (Yesterday / Last week).',
+    instructionsKa: 'ჩასვი ზმნა Past Simple ფორმაში.',
     icon: 'treasure',
     previewArt: 'treasure',
     sections: [
       {
-        headingEn: 'Present ➔ Past Simple (go -> went, see -> saw, eat -> ate)',
-        headingKa: 'აწმყო ➔ წარსული',
+        headingEn: 'Present ➔ Past Simple (go -> went, see -> saw)',
+        headingKa: 'სავარჯიშო',
         items: [
           { base: 'GO (Infinitive)', line: 'WENT', sentence: '1. Yesterday, our family (go) ________ to the zoo park.' },
           { base: 'SEE (Infinitive)', line: 'SAW', sentence: '2. We (see) ________ two big lions and three playful monkeys.' },
           { base: 'EAT (Infinitive)', line: 'ATE', sentence: '3. At lunchtime, the children (eat) ________ strawberry ice cream.' },
           { base: 'BUY (Infinitive)', line: 'BOUGHT', sentence: '4. Mom (buy) ________ two English storybooks for me.' },
-          { base: 'HAVE (Infinitive)', line: 'HAD', sentence: '5. We (have) ________ a wonderful and happy day.' },
-          { base: 'WRITE (Infinitive)', line: 'WROTE', sentence: '6. In the evening, Lucas (write) ________ his English homework.' },
-          { base: 'DRINK (Infinitive)', line: 'DRANK', sentence: '7. I (drink) ________ a glass of cold orange juice.' },
-          { base: 'TAKE (Infinitive)', line: 'TOOK', sentence: '8. Dad (take) ________ ten nice photos with his camera.' }
+          { base: 'HAVE (Infinitive)', line: 'HAD', sentence: '5. We (have) ________ a wonderful day.' },
+          { base: 'WRITE (Infinitive)', line: 'WROTE', sentence: '6. In the evening, Lucas (write) ________ his homework.' }
         ]
       }
     ],
-    answerKey: [
-      '1. went', '2. saw', '3. ate', '4. bought',
-      '5. had', '6. wrote', '7. drank', '8. took'
-    ]
+    answerKey: ['1. went', '2. saw', '3. ate', '4. bought', '5. had', '6. wrote']
+  },
+  {
+    id: 'g4_past_simple_regulars',
+    grade: 4,
+    category: 'grammar',
+    isFree: true,
+    titleEn: 'Past Simple: Regular Verbs with -ed',
+    titleKa: 'Past Simple: წესიერი ზმნები (-ed დაბოლოებით)',
+    topicEn: 'Play -> Played, Visit -> Visited, Watch -> Watched, Clean -> Cleaned',
+    topicKa: 'წესიერი ზმნების წესები',
+    difficulty: 'Medium',
+    instructionsEn: 'Add -ed to the regular verbs to complete the past sentences.',
+    instructionsKa: 'დაამატე -ed ზმნებს და შეავსე წინადადებები.',
+    icon: 'treasure',
+    previewArt: 'treasure',
+    sections: [
+      {
+        headingEn: 'Regular -ed Verb Tasks',
+        headingKa: 'სავარჯიშო',
+        items: [
+          { prompt: '1. play ➔ Yesterday, we (play) ________________ football in the yard.', line: 'played' },
+          { prompt: '2. visit ➔ Last Sunday, Sarah (visit) ________________ her grandmother.', line: 'visited' },
+          { prompt: '3. watch ➔ In the evening, they (watch) ________________ a cartoon movie.', line: 'watched' },
+          { prompt: '4. clean ➔ Lucas (clean) ________________ his bedroom yesterday.', line: 'cleaned' },
+          { prompt: '5. listen ➔ We (listen) ________________ to nice music in English class.', line: 'listened' }
+        ]
+      }
+    ],
+    answerKey: ['1. played', '2. visited', '3. watched', '4. cleaned', '5. listened']
   },
   {
     id: 'g4_comparatives_superlatives',
@@ -412,33 +592,28 @@ export const allWorksheets: WorksheetData[] = [
     isFree: true,
     titleEn: 'Comparatives (-er than) & Superlatives (the -est)',
     titleKa: 'ზედსართავი სახელის შედარების ხარისხები',
-    topicEn: 'Short Adjectives: taller than / the tallest, bigger than / the biggest',
-    topicKa: 'შედარებითი (-er than) და აღმატებითი (the -est) ხარისხები',
+    topicEn: 'Taller than / The tallest, Bigger than / The biggest, Faster than / The fastest',
+    topicKa: 'შედარებითი და აღმატებითი ხარისხები',
     difficulty: 'Medium',
     instructionsEn: 'Fill in the blanks with the comparative (-er than) or superlative (the -est) form.',
-    instructionsKa: 'შეავსე შედარებითი ან აღმატებითი ფორმით.',
+    instructionsKa: 'შეავსე შედარებითი (-er than) ან აღმატებითი (the -est) ფორმით.',
     icon: 'treasure',
     previewArt: 'treasure',
     sections: [
       {
-        headingEn: 'Rule: [ tall ➔ taller than ➔ the tallest ]',
-        headingKa: 'წესი: -er than (შედარება) | the -est (აღმატებითი)',
+        headingEn: 'Fill in Comparative vs Superlative:',
+        headingKa: 'სავარჯიშო',
         items: [
           { prompt: '1. Tall ➔ A giraffe is ____________________ a horse.', line: 'taller than' },
           { prompt: '2. Fast ➔ A cheetah is the ____________________ animal on land.', line: 'fastest' },
           { prompt: '3. Big ➔ An elephant is ____________________ a dog.', line: 'bigger than' },
           { prompt: '4. Heavy ➔ The blue whale is the ____________________ mammal on Earth.', line: 'heaviest' },
           { prompt: '5. Small ➔ A mouse is ____________________ a cat.', line: 'smaller than' },
-          { prompt: '6. Cold ➔ Winter is the ____________________ season of the year.', line: 'coldest' },
-          { prompt: '7. Old ➔ My grandfather is ____________________ my father.', line: 'older than' },
-          { prompt: '8. Long ➔ The Nile is the ____________________ river in Africa.', line: 'longest' }
+          { prompt: '6. Cold ➔ Winter is the ____________________ season of the year.', line: 'coldest' }
         ]
       }
     ],
-    answerKey: [
-      '1. taller than', '2. fastest', '3. bigger than', '4. heaviest',
-      '5. smaller than', '6. coldest', '7. older than', '8. longest'
-    ]
+    answerKey: ['1. taller than', '2. fastest', '3. bigger than', '4. heaviest', '5. smaller than', '6. coldest']
   },
   {
     id: 'g4_wh_questions_mystery',
@@ -447,7 +622,7 @@ export const allWorksheets: WorksheetData[] = [
     isFree: true,
     titleEn: 'Question Words: Who, Where, When, Why, What, How',
     titleKa: 'კითხვითი სიტყვები (Who, Where, When, Why, What, How)',
-    topicEn: 'Asking & Answering Questions in English',
+    topicEn: 'Question Formation & Answering',
     topicKa: 'კითხვის დასმა და პასუხის გაცემა',
     difficulty: 'Medium',
     instructionsEn: 'Choose the correct question word: [ WHO , WHERE , WHEN , WHY , WHAT , HOW ].',
@@ -459,21 +634,16 @@ export const allWorksheets: WorksheetData[] = [
         headingEn: 'Word Bank: [ WHO (ვინ) , WHERE (სად) , WHEN (როდის) , WHY (რატომ) , WHAT (რა) , HOW (როგორ) ]',
         headingKa: 'სიტყვათა ბანკი',
         items: [
-          { sentence: '1. ________ is your English teacher? ➔ Mrs. Davis.', line: 'Who', clue: 'Target: Person' },
-          { sentence: '2. ________ do you live? ➔ In Tbilisi, Georgia.', line: 'Where', clue: 'Target: Place' },
-          { sentence: '3. ________ does the morning school start? ➔ At 9:00 AM.', line: 'When', clue: 'Target: Time' },
-          { sentence: '4. ________ are you smiling? ➔ Because today is my birthday!', line: 'Why', clue: 'Target: Reason' },
-          { sentence: '5. ________ is in your school bag? ➔ Three books and a pencil case.', line: 'What', clue: 'Target: Thing' },
-          { sentence: '6. ________ do you go to school? ➔ By yellow school bus.', line: 'How', clue: 'Target: Manner' },
-          { sentence: '7. ________ is your favorite sport? ➔ Football.', line: 'What', clue: 'Target: Thing' },
-          { sentence: '8. ________ is your best friend? ➔ Lucas.', line: 'Who', clue: 'Target: Person' }
+          { sentence: '1. ________ is your English teacher? ➔ Mrs. Davis.', line: 'Who' },
+          { sentence: '2. ________ do you live? ➔ In Tbilisi, Georgia.', line: 'Where' },
+          { sentence: '3. ________ does morning school start? ➔ At 9:00 AM.', line: 'When' },
+          { sentence: '4. ________ are you smiling? ➔ Because today is my birthday!', line: 'Why' },
+          { sentence: '5. ________ is in your school bag? ➔ Three books and a pencil case.', line: 'What' },
+          { sentence: '6. ________ do you go to school? ➔ By yellow school bus.', line: 'How' }
         ]
       }
     ],
-    answerKey: [
-      '1. Who', '2. Where', '3. When', '4. Why',
-      '5. What', '6. How', '7. What', '8. Who'
-    ]
+    answerKey: ['1. Who', '2. Where', '3. When', '4. Why', '5. What', '6. How']
   }
 ];
 
@@ -513,8 +683,7 @@ export const fullCurriculumSyllabus = [
       'Present Continuous for Actions Happening Right Now (is swimming, are singing)',
       'ESL Reading Comprehension Stories with Direct Factual Questions',
       'Possessives (\'s) & Object Pronouns (me, him, her, us, them)',
-      'Food & Meals, My House & Daily Routine Vocabulary',
-      'Demonstratives: This, That, These, Those'
+      'Demonstratives: This, That, These, Those Pointer Practice'
     ]
   },
   {
@@ -522,12 +691,11 @@ export const fullCurriculumSyllabus = [
     titleKa: 'მე-4 კლასი (Grade 4 • Pre-Intermediate)',
     topics: [
       'Past Simple: Common Irregular Verbs (went, saw, ate, bought, had, wrote)',
-      'Past Simple: Regular Verbs with -ed (played, visited, cooked, walked)',
+      'Past Simple: Regular Verbs with -ed (played, visited, watched, cleaned)',
       'Comparatives (-er than) & Superlatives (the -est / more / most)',
       'Wh- Questions Mastery (Who, Where, When, Why, What, How)',
       'Future Plans with "Going to" and "Will"',
-      'Multi-Paragraph Reading Comprehension & Detective Mysteries',
-      'Short Paragraph Writing Templates & Guided Story Starters'
+      'Multi-Paragraph Reading Comprehension & Detective Mysteries'
     ]
   }
 ];
